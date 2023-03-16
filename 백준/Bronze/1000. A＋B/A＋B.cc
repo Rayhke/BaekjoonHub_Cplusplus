@@ -15,15 +15,15 @@ int main() {
 추후 프로그램을 계속 반복 실행 시에 (나중에 이어서 수정)
 */
 /*========================================*/
-/* ■ C언어 ■
+/* ■ C언어 ■ */
 	
-  #define _CRT_SECURE_NO_WARNINGS
-  #include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 
-  int main() {
-  	int a, b;
-  	scanf("%d %d", &a, &b);
-  	printf("%d", a + b);
-  	return 0;
-  }
-*/
+int main() {
+	  int a, b;
+	  scanf("%d %d", &a, &b);
+	  printf("%d", a + b);
+	  return 0;
+}
+
