@@ -9,13 +9,13 @@ int main() {
 		num[n] = a + b;
 		if (a > 0 && b > 0) {
 			add = 1;
+			n++;
 		}
 		else {
 			add = 0;
 		}
-		n++;
 	}
-	for (m = 0; m < n - 1; m++) {
+	for (m = 0; m < n; m++) {
 		cout << num[m] << "\n";
 	}
 	return 0;
