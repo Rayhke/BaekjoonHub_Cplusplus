@@ -3,8 +3,12 @@ using namespace std;
 
 int main() {
 	int n = 2;
-	while (n--) {
-		cout << "강한친구 대한육군\n";
+	while (n) {
+		cout << "강한친구 대한육군";
+		--n;
+		if (n == 1) {
+			cout << "\n";
+		}
 	}
 	return 0;
 }
