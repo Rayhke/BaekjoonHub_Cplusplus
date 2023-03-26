@@ -25,17 +25,16 @@ int main() {
 (else) 문은 모든 조건문이 성립되지 않아 틀어지는 것(변수, 에러, 버그 등)을 상정하여 실행되는 마지노선과도 같다.
 */
 /*========================================*/
-/* ■ C언어 ■
+/* ■ C언어 ■ */
 
-  #define _CRT_SECURE_NO_WARNINGS
-  #include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 
-  int main() {
-  	int a, b;
-  	scanf("%d %d", &a, &b);
-  	if (a > b) {printf(">");}
-  	else if (a < b) {printf("<");}
-  	else {printf("==");}
-  	return 0;
-	}
-*/
+int main() {
+	int a, b;
+	scanf("%d %d", &a, &b);
+	if (a > b) {printf(">");}
+	else if (a < b) {printf("<");}
+	else {printf("==");}
+	return 0;
+}
