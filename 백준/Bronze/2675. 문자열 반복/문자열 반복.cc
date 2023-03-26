@@ -3,14 +3,13 @@
 using namespace std;
 
 int main() {
-	int t, r, b = 0;
+	int t, r;
 	char s[21] = { 0 };
 	string a;
 	cin >> t;
 	for (int n = 0; n < t;) {
 		cin >> r >> s;
-		b = (int)strlen(s);
-		for (int m = 0; m < b; m++) {
+		for (int m = 0; m < strlen(s); m++) {
 			for (int l = 0; l < r; l++) {
 				a += s[m];
 			}
