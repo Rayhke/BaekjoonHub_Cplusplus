@@ -9,8 +9,9 @@ int main() {
 		cin >> a >> b;
 		c[n] = a + b;
 	}
-	for (int m = 0; m < t; m++) {
+	for (int m = 0; m < t;) {
 		cout << "Case #" << m + 1 << ": " << c[m];
+		m++;
 		if (m < t) {
 			cout << "\n";
 		}
