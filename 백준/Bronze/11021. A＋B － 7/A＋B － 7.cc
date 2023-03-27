@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	int a, b, t;
-	int c[100000];
+	int c[100000] = { 0 };
 	cin >> t;
 	for (int n = 0; n < t; n++) {
 		cin >> a >> b;
