@@ -13,12 +13,12 @@ int main() {
 			else if (a <= b) {
 				d += "No";
 			}
+			if (c > 0) {
+				d += "\n";
+			}
 		}
 		else {
 			c--;
-		}
-		if (c > 0) {
-			d += "\n";
 		}
 	}
 	cout << d;
