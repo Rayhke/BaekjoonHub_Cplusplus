@@ -12,16 +12,16 @@
 
 ### 문제 설명
 
-<p>長さ <var>N</var> の英小文字からなる文字列 <var>S</var> が与えられる．<var>S</var> のうち母音字の個数，つまり <code>a</code>，<code>i</code>，<code>u</code>，<code>e</code>，<code>o</code> の個数の総和を求めよ．</p>
+<p>영어 소문자로 이루어진 길이 <var>N</var> 의 문자열 <var>S</var> 가 주어집니다. <var>S</var> 에서 모음의 개수, 즉 <code>a</code>，<code>i</code>，<code>u</code>，<code>e</code>，<code>o</code> 의 개수의 합을 구합시다.</p>
 
 ### 입력 
 
- <p>入力は以下の形式で標準入力から与えられる．</p>
+ <p>아래와 같은 형식으로 표준 입력이 주어집니다.</p>
 
 <pre><var>N</var>
 <var>S</var></pre>
 
 ### 출력 
 
- <p><var>S</var> のうち母音字の個数，つまり <code>a</code>，<code>i</code>，<code>u</code>，<code>e</code>，<code>o</code> の個数の総和を出力せよ．</p>
+ <p><var>S</var> 에서 모음의 개수, 즉 <code>a</code>，<code>i</code>，<code>u</code>，<code>e</code>，<code>o</code> 의 개수의 합을 출력합니다.</p>
 
