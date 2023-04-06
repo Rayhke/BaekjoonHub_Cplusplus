@@ -12,13 +12,13 @@
 
 ### 문제 설명
 
-<p>Kozik pragnie zostać koszykarzem. Po rozmowie z trenerem okazało się, że jest za niski. Kozik jest jednak tak zdeterminowany, że chce spełnić wymagania trenera, nawet jeśli okazałoby się to oszustwem. Wpadł więc na genialny pomysł robienia sobie guzów na głowie, aż osiągnie wymagany wzrost. Zauważył, że przy każdym uderzeniu guz się powiększa o <em>m</em> cm. Kozik zastanawia się ile minimalnie razy będzie musiał się uderzyć.</p>
+<p>코직은 농구 선수가 꿈입니다. 하지만 코치에게 얘기를 하니 키가 너무 작다는 얘기를 들었습니다. 하지만 코직은 열정으로 가득했으므로 편법을 쓰더라도 코치의 요구 조건을 맞추려 합니다. 코직은 원하는 키가 될 때까지 머리에 혹을 만든다는 엄청난 아이디어를 떠올렸습니다. 그는 한 번 때릴 때마다, 혹이 m cm씩 자란다는 것을 발견했습니다. 코직은 자기를 최소 얼마나 때려야 할지 궁금합니다.</p>
 
 ### 입력 
 
- <p>W pierwszej linii wejścia 3 liczby całkowite: <em>k</em>, <em>w</em>, <em>m</em> (1 ≤ <em>k</em> ≤ 200, 1 ≤ <em>w,</em> <em>m</em> ≤ 10<sup>9</sup>), oznaczające odpowiednio wysokość Kozika, wymaganą przez trenera wysokość oraz wartość powiększania się guza po każdym uderzeniu.</p>
+ <p>한 줄에 각각 코직의 키, 코치가 요구한 키, 한 번 때릴 때마다 늘어나는 혹의 길이를 나타내는 세 정수 <em>k</em>, <em>w</em>, <em>m</em> (1 ≤ <em>k</em> ≤ 200, 1 ≤ <em>w,</em> <em>m</em> ≤ 10<sup>9</sup>), 가 주어집니다.</p>
 
 ### 출력 
 
- <p>Pierwszy i jedyny wiersz wyjścia powinien zawierać jedną liczbę całkowitą równą minimalnej liczbie uderzeń, które musi wykonać Kozik.</p>
+ <p>오로지 한 줄에 코직이 스스로를 때려야 하는 최소 횟수를 나타낸 하나의 정수를 출력합니다. </p>
 
