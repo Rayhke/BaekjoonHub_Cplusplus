@@ -12,20 +12,20 @@
 
 ### 문제 설명
 
-<p>A regular box of cupcakes holds 8 cupcakes, while a small box holds 3 cupcakes. There are 28 students in a class and a total of at least 28 cupcakes. Your job is to determine how many cupcakes will be left over if each student gets one cupcake.</p>
+<p>일반 컵케이크 박스에는 8개의 컵케이크가, 작은 컵케이크 박스에는 3개의 컵케이크가 들어갑니다. 반에는 28명의 학생이 있고 최소 28개 이상의 컵케이크가 있습니다. 각 학생이 하나의 컵케이크를 가져가고 난 후, 몇 개의 컵케이크가 남는지 구해봅시다.</p>
 
 <p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/8ade8b89-bc7a-4438-a7fe-dad6f604a66d/-/preview/" style="width: 383px; height: 108px;"></p>
 
 ### 입력 
 
- <p>The input consists of two lines.</p>
+ <p>입력은 두 줄로 주어집니다.</p>
 
 <ul>
-	<li>The first line contains an integer R ≥ 0, representing the number of regular boxes.</li>
-	<li>The second line contains an integer S ≥ 0, representing the number of small boxes.</li>
+	<li>첫째 줄에는 일반 컵케이크 박스의 수를 나타내는 정수 R (R ≥ 0), 이 주어집니다.</li>
+	<li>둘째 줄에는 작은 컵케이크 박스의 수를 나타내는 정수 S (S ≥ 0), 가 주어집니다.</li>
 </ul>
 
 ### 출력 
 
- <p>Output the number of cupcakes that are left over.</p>
+ <p>남은 컵케이크의 수를 출력합니다.</p>
 
