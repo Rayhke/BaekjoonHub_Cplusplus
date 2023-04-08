@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <cstring>	// [strlen] 명령문을 쓰기 위한 헤더파일
 using namespace std;
 
 int main() {
