@@ -7,19 +7,11 @@ int main() {
 	while (c) {
 		cin >> a >> b;
 		if (a != 0 && b != 0) {
-			if (a > b) {
-				d += "Yes";
-			}
-			else if (a <= b) {
-				d += "No";
-			}
-			if (c > 0) {
-				d += "\n";
-			}
+			if (a > b) d += "Yes";
+			else if (a <= b) d += "No";
+			if (c > 0) d += "\n";
 		}
-		else {
-			c--;
-		}
+		else { c--; }
 	}
 	cout << d;
 	return 0;
