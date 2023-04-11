@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	int n, m = 0;
-	int a[100000];
+	int a[46];
 	a[0] = 0; a[1] = 1;
 	cin >> n;
 	if (n < 2) {
