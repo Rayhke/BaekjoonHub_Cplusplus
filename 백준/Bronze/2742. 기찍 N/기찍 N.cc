@@ -1,11 +1,13 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
 	int n;
-	scanf("%d", &n);
-	while (n--) {
-		printf("%d\n", n + 1);
+	cin >> n;
+	while (n > 0) {
+		cout << n;
+		if (n > 1) cout << "\n";
+		n--;
 	}
 	return 0;
 }
