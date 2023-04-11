@@ -1,2 +1,9 @@
-#include <stdio.h>
-int main(){int a,b;scanf("%d %d",&a,&b);printf("%d",2*b-a);}
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	cout << (2 * b) - a;
+	return 0;
+}
