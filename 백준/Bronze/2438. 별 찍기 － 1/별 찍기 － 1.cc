@@ -2,18 +2,13 @@
 using namespace std;
 
 int main() {
-	int n;
+	int n; 
 	cin >> n;
-	if (1 <= n <= 100) {
-		for (int a = 0; a < n; a++) {
-			for (int b = 0; b <= a; b++) {
-				cout << "*";
-			}
-			cout << "\n";
+	for (int a = 0; a < n; a++) {
+		for (int b = 0; b <= a; b++) {
+			cout << "*";
 		}
-	}
-	else {
-		cout << "범위를 확인 후에, 다시 입력해 주세요.";
+		if (a != (n - 1))cout << "\n";
 	}
 	return 0;
 }
