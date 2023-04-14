@@ -11,7 +11,8 @@ int main() {
 		}
 	}
 	for (int l = 0; l < T; l++) {
-		cout << "Case " << l + 1 << ": " << s[l] << "\n";
+		cout << "Case " << l + 1 << ": " << s[l];
+		if (l != (T - 1))cout << "\n";
 	}
 	return 0;
 }
