@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <cmath>		// pow((변수명), (제곱 승수)) 명령문을 쓰기 위한 헤더 파일
 using namespace std;
 
 int main() {
