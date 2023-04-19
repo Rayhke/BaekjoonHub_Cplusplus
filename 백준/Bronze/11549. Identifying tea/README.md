@@ -12,17 +12,17 @@
 
 ### 문제 설명
 
-<p>Blind tea tasting is the skill of identifying a tea by using only your senses of smell and taste.</p>
+<p>블라인드 차 시음은 오로지 향과 맛만 이용해 차를 구분하는 기술입니다.</p>
 
-<p>As part of the Ideal Challenge of Pure-Tea Consumers (ICPC), a local TV show is organized. During the show, a full teapot is prepared and five contestants are handed a cup of tea each. The participants must smell, taste and assess the sample so as to identify the tea type, which can be: (1) white tea; (2) green tea; (3) black tea; or (4) herbal tea. At the end, the answers are checked to determine the number of correct guesses.</p>
+<p>차 애호가의 꿈의 대회 (ICPC)의 일환으로 지역 TV 쇼가 준비되어 있습니다. 쇼에는 꽉 찬 차 주전자가 준비되어 있고 다섯 명의 도전자는 각각 한 컵의 차를 제공 받습니다. 참가자는 향과 맛을 느끼며 잔을 음미해 아래의 종류 중 차의 종류가 무엇인지 맞춰야 합니다: (1) 백차, (2) 녹차, (3) 홍차, (4) 허브 차. 마지막에 정답을 발표하고 몇 명이 맞았는지 확인합니다.</p>
 
-<p>Given the actual tea type and the answers provided, determine the number of contestants who got the correct answer.</p>
+<p>정답이 되는 차의 종류와 참가자의 답변이 주어졌을 때, 정답을 맞춘 참가자의 수를 확인합시다.</p>
 
 ### 입력 
 
- <p>The first line contains an integer T representing the tea type (1 ≤ T ≤ 4). The second line contains five integers A, B, C, D and E, indicating the answer given by each contestant (1 ≤ A, B, C, D, E ≤ 4).</p>
+ <p>첫 줄에 차의 종류를 의미하는 정수 T가 주어집니다. (1 ≤ T ≤ 4). 둘째 줄에 각 참가자가 말한 답변을 나타내는 다섯 정수 A, B, C, D, E가 주어집니다. (1 ≤ A, B, C, D, E ≤ 4).</p>
 
 ### 출력 
 
- <p>Output a line with an integer representing the number of contestants who got the correct answer.</p>
+ <p>정답을 맞춘 참가자의 수를 나타내는 하나의 정수를 한 줄에 출력합니다.</p>
 
