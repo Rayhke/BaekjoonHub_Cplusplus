@@ -20,7 +20,8 @@ int main() {
 	if (rev1(a) > rev2(b)) { std::cout << rev1(a) << std::endl; }
 	else { std::cout << rev2(b) << std::endl; }
 	return 0;
-}/* ■ 설명 ■
+}
+/* ■ 설명 ■
 굳이 using namespace std; 를 뺀 이유는 헤더 파일 충돌을 피하기 위해서,
 동일한 이름의 변수나 함수가 존재한다면 변수나 함수 등 의도와 다른 코드를
 참고할 가능성이 있기 때문에, 남발하는 것은 매우 좋지 않다.
