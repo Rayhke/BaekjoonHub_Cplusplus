@@ -1,17 +1,17 @@
-#include <iostream>		// 백준 - 브론즈 2 (2908번) / 완성 / 오답 수정
-#include <string>		// 함수 to_string 를 사용하기 위해서 선언
+#include <iostream>
+#include <string>	// 함수 to_string 를 사용하기 위해서 선언
 #include <algorithm>	// 함수 reverse 를 사용하기 위해서 선언
-#include <cstdlib>		// 함수 atoi 를 사용하기 위해서 선언
+#include <cstdlib>	// 함수 atoi 를 사용하기 위해서 선언
 
 int rev1(int a) {
-	std::string s = std::to_string(a);		// 상수를 문자열로 입력 받아서 변환
-	reverse(s.begin(), s.end());			// 문자열 1 ~ 끝자리까지 거꾸로 뒤집기
-	return atoi(s.c_str());					// 문자열을 다시 상수로 변환
+	std::string s = std::to_string(a);	// 상수를 문자열로 입력 받아서 변환
+	reverse(s.begin(), s.end());		// 문자열 1 ~ 끝자리까지 거꾸로 뒤집기
+	return atoi(s.c_str());			// 문자열을 다시 상수로 변환
 }
 int rev2(int b) {
-	std::string s = std::to_string(b);		// 상수를 문자열로 입력 받아서 변환
-	reverse(s.begin(), s.end());			// 문자열 1 ~ 끝자리까지 거꾸로 뒤집기
-	return atoi(s.c_str());					// 문자열을 다시 상수로 변환
+	std::string s = std::to_string(b);	// 상수를 문자열로 입력 받아서 변환
+	reverse(s.begin(), s.end());		// 문자열 1 ~ 끝자리까지 거꾸로 뒤집기
+	return atoi(s.c_str());			// 문자열을 다시 상수로 변환
 }
 
 int main() {
