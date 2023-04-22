@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ctime>
 using namespace std;
 
 int s(int a, int b, int c, int d) {
