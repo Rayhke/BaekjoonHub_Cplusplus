@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	int a, b[30] = { 0 }, c = 0;
+	int a, b[30] = { 0 }, c = 0;			// (a : 값 입력), (b : 값 저장), (c : 빈 공간 찾은 횟수, 카운트)
 	for (int n = 0; n < 28; n++) {			// 배열 b[30] 에 입력 받은 값의 자리 번호로 값 담기
 		cin >> a;
 		b[a - 1] = a;
