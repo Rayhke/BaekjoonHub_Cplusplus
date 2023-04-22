@@ -3,14 +3,14 @@ using namespace std;
 
 int main() {
 	int a, b[30] = { 0 }, c = 0;
-	for (int n = 0; n < 28; n++) {
+	for (int n = 0; n < 28; n++) {			// 배열 b[30] 에 입력 받은 값의 자리 번호로 값 담기
 		cin >> a;
 		b[a - 1] = a;
 	}
-	for (int n = 0; n < 30; n++) {
-		if (b[n] == 0) { 
+	for (int n = 0; n < 30; n++) {			// 배열 b[30] 에 빈 곳을 찾기
+		if (b[n] == 0) {
 			cout << (n + 1) << " "; c++;
-			if (c == 2) { break; }
+			if (c == 2) { break; }		// 만약 빈 공간을 2개 찾았다면, 목적을 달성 하였기에 반복문을 종료하여 최적화한다.
 		}
 	}
 	return 0;
