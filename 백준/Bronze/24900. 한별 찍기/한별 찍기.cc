@@ -67,3 +67,6 @@ int main() {
 	cout << "                                                ?DNNDD?~DD          ~NN~~=NDD$                                          \n";
 	cout << "                                                     :DDD.            NNNN=                                             ";
 }
+/* ■ 설명 ■
+힌트는 한 줄 뒤에 보이지 않는 공백도 출력할 것 
+*/
