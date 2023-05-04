@@ -13,3 +13,6 @@ int main() {
 	cout << a << endl;
 	return 0;
 }
+/* ■ 설명 ■
+a[b] = *b
+*/
