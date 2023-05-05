@@ -1,12 +1,12 @@
 #include <iostream>
-#include <cmath>		// 제곱 연산 pow를 사용하기 위해서
+#include <cmath>				// 제곱 연산 pow를 사용하기 위해서
 using namespace std;
 
 int main() {
 	int K;
 	double D1, D2, P, C = 0;
 	cin >> K >> D1 >> D2;
-	if (D1 != D2) {					// 이렇게 설계한 이유는 - ◆ 해설 1 ◆ 참고
+	if (D1 != D2) {				// 이렇게 설계한 이유는 - ◆ 해설 1 ◆ 참고
 		C = pow(((D1 - D2) / 2), 2);
 	}
 	P = (double)pow(K, 2) - C;
@@ -15,7 +15,7 @@ int main() {
 	cout << P << endl;
 	return 0;
 }
-/* ■ 설명 ■	 // 백준 - 브론즈 3 (16479번)
+/* ■ 설명 ■
 컵라면 용기(위가 크고 아래가 작은 원지름)를 옆에서 바라 볼 때 시점 기준으로,
 등변 사다리꼴 윗면이 D1, 밑면이 D2, 빗변이 K 라고 할 때,
 피타고라스 공식을 이용하여,
