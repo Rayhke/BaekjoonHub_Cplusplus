@@ -13,3 +13,6 @@ int main() {
 	cout << h << " " << m << endl;
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
