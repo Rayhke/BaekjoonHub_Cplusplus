@@ -12,3 +12,6 @@ int main() {
 	cout << (s / m / a) * 100;
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
