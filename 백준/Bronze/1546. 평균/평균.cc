@@ -8,6 +8,7 @@ int main() {
 	for (int n = 0; n < a; n++) {
 		cin >> b; s += b;
 		m = (b > m) ? b : m;
-	} cout << (s / m / a) * 100;
+	}
+	cout << (s / m / a) * 100;
 	return 0;
 }
