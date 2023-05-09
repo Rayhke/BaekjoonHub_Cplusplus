@@ -5,7 +5,7 @@ int s(int a, int b) {
 	return b + (a - 1);
 }
 
-int main() {
+int main(int argc, char* argv[]) {
 	int N, a, b = 1;
 	cin >> N;
 	for (int n = 0; n < N; n++) {
