@@ -5,7 +5,7 @@ int main() {
 	int a[26] = {}, b, c, m = 0, l;
 	char d; string e;
 	cin >> e;
-    l = size(e);
+	l = size(e);
 	for (int n = 0; n < l; n++) {
 		b = e[n];
 		if (64 < b && b < 91) { a[b - 65] += 1; }
