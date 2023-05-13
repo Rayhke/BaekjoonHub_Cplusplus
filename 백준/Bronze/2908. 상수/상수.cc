@@ -1,7 +1,7 @@
 #include <iostream>
-#include <string>	// 함수 to_string 를 사용하기 위해서 선언
-#include <algorithm>	// 함수 reverse 를 사용하기 위해서 선언
-#include <cstdlib>	// 함수 atoi 를 사용하기 위해서 선언
+#include <string>	// [to_string] 를 사용하기 위한 헤더 파일
+#include <algorithm>	// [reverse] 를 사용하기 위한 헤더 파일
+#include <cstdlib>	// [atoi] 를 사용하기 위한 헤더 파일
 
 int rev1(int a) {
 	std::string s = std::to_string(a);	// 상수를 문자열로 입력 받아서 변환
