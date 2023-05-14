@@ -1,7 +1,7 @@
 #include <iostream>
-#include <string>		// [to_string] 를 사용하기 위한 헤더 파일 - < 설명 1 >
+#include <string>	// [to_string] 를 사용하기 위한 헤더 파일 - < 설명 1 >
 #include <algorithm>	// [reverse] 를 사용하기 위한 헤더 파일 - < 설명 2 >
-#include <cstdlib>		// [atoi] 를 사용하기 위한 헤더 파일 - < 설명 3 >
+#include <cstdlib>	// [atoi] 를 사용하기 위한 헤더 파일 - < 설명 3 >
 using namespace std;
 
 int s(int a, int b) {
