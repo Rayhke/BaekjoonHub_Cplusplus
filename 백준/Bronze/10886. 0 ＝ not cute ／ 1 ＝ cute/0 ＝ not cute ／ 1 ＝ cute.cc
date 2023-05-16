@@ -13,7 +13,7 @@ int main() {
 	else { cout << "Junhee is not cute!" << endl; }
 	return 0;
 }
-/* ■ 설명 ■	 // 백준 - 브론즈 3 (10886번)
+/* ■ 설명 ■
 a의 값 만큼, b를 반복 입력하고
 
 b가 입력 받은 값이 0 과 1 중 어느 것이 많은가에 따라
