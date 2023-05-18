@@ -10,3 +10,7 @@ int main() {
 	for (int n = 0; n < m; n++) { cin >> a >> b; cout << s(a, b) << '\n'; }
 	return 0;
 }
+/* ■ 설명 ■
+인라인 함수의 기능과
+[ios::sync_with_stdio(false);] [cin.tie(NULL);] 를 사용하여 빠른 연산을 시행함
+*/
