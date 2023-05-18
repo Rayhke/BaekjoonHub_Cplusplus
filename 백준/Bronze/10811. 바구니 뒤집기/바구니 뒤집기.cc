@@ -7,7 +7,7 @@ int main() {
 	for (int b = 1; b <= n; b++) { a[b] = b; }
 	for (int c = 0; c < m; c++) {
 		cin >> o >> p;
-		for (int d = 0; d <= (p - o) / 2; d++) {		// 이렇게 설계한 이유는 - ◆ 해설 1 ◆ 참고
+		for (int d = 0; d <= (p - o) / 2; d++) {	// 이렇게 설계한 이유는 - ◆ 해설 1 ◆ 참고
 			q = a[o + d];
 			a[o + d] = a[p - d];
 			a[p - d] = q;
