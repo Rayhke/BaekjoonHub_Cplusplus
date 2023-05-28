@@ -3,9 +3,9 @@ using namespace std;
 
 int s(int a[], int c, int n) {
 	int x = n - 1;
-	while (x > -1) {
-		if (a[x] <= c) { break; }
-		x--;
+	while (x > -1) {						// 내림차순으로 탐색하여, 최종적으로
+		if (a[x] <= c) { break; }				// [c] 보다 작거나 같은 (또는 [c] 다음으로 큰 값이 담긴 [int a[x]])
+		x--;							// 즉, 자릿값 [x] 을 발견하는 것이 핵심.
 	}
 	return x;
 }
