@@ -7,11 +7,11 @@ int main() {
 	cin >> a;
 	for (int n = 0; n < a; n++) {
 		cin >> s;
-		if (s == "push") {					// push(푸시)
+		if (s == "push") {										// push(푸시)
 			cin >> b; d[c] = b;
 			c = c + 1;
 		}
-		else if (s == "pop") {				// pop(팝)
+		else if (s == "pop") {										// pop(팝)
 			if (c > 0 && d[c - 1] != 0) {
 				c = c - 1;
 				cout << d[c] << '\n';
@@ -19,14 +19,14 @@ int main() {
 			}
 			else { cout << -1 << '\n'; }
 		}
-		else if (s == "size") {				// size(사이즈)
+		else if (s == "size") {										// size(사이즈)
 			cout << c << '\n';
 		}
-		else if (s == "empty") {			// empty
+		else if (s == "empty") {									// empty
 			if ((c > 0 && d[c - 1] == 0) || (c == 0 && d[c] == 0)) { cout << 1 << '\n'; }
 			else { cout << 0 << '\n'; }
 		}
-		else if (s == "top") {				// top(탑)
+		else if (s == "top") {										// top(탑)
 			if (c > 0 && d[c - 1] != 0) { cout << d[c - 1] << '\n'; }
 			else { cout << -1 << '\n'; }
 		}
