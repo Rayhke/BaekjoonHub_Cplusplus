@@ -8,26 +8,30 @@ int main() {
 	for (int n = 0; n < a; n++) {
 		cin >> s;
 		if (s == "push") {
-			cin >> b; d[c] = b;
-			c = c + 1;
+			cin >> b;
+			if (d[c] != 0) {
+				c = c + 1;
+				d[c] = b;
+			}
+			else { d[c] = b; }
 		}
 		else if (s == "pop") {
-			if (c > 0 && d[c - 1] != 0) {
-				c = c - 1;
-				cout << d[c] << '\n';
-				d[c] = 0;
+			if (d[c] != 0) {
+				cout << d[c] << '\n'; d[c] = 0;
+				if (c > 0) { c = c - 1; }
 			}
 			else { cout << -1 << '\n'; }
 		}
 		else if (s == "size") {
-			cout << c << '\n';
+			if (d[0] != 0) { cout << c + 1 << '\n'; }
+			else { cout << c << '\n'; }
 		}
 		else if (s == "empty") {
-			if ((c > 0 && d[c - 1] == 0) || (c == 0 && d[c] == 0)) { cout << 1 << '\n'; }
+			if (d[c] == 0) { cout << 1 << '\n'; }
 			else { cout << 0 << '\n'; }
 		}
 		else if (s == "top") {
-			if (c > 0 && d[c - 1] != 0) { cout << d[c - 1] << '\n'; }
+			if (d[c] != 0) { cout << d[c] << '\n'; }
 			else { cout << -1 << '\n'; }
 		}
 		s = "";
