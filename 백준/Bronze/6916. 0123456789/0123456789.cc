@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	if (n == 1 || n == 4) {
+		cout << "\n";
+		if (n == 1) {
+			cout << "      *\n      *\n      *\n";
+		}
+		else if (n == 4) {
+			cout << "*     *\n*     *\n*     *\n * * *";
+		}
+		cout << "\n      *\n      *\n      *\n";
+	}
+	else {
+		cout << " * * *\n";
+		if (n == 0 || n == 8 || n == 9) {
+			cout << "*     *\n*     *\n*     *\n";
+			if (n != 0) {
+				cout << " * * *\n";
+				if (n == 8) {
+					cout << "*     *\n*     *\n*     *";
+				}
+				else {
+					cout << "      *\n      *\n      *";
+				}
+				cout << "\n * * *\n";
+			}
+			else {
+				cout << "\n*     *\n*     *\n*     *\n * * *\n";
+			}
+		}
+		else if (n == 5 || n == 6) {
+			cout << "*\n*\n*\n * * *\n";
+			if (n == 5) {
+				cout << "      *\n      *\n      *";
+			}
+			else {
+				cout << "*     *\n*     *\n*     *";
+			}
+			cout << "\n * * *\n";
+		}
+		else {
+			cout << "      *\n      *\n      *\n";
+			if (n != 7) {
+				cout << " * * *\n";
+				if (n == 2) {
+					cout << "*\n*\n*";
+				}
+				else {
+					cout << "      *\n      *\n      *";
+				}
+				cout << "\n * * *\n";
+			}
+			else {
+				cout << "\n      *\n      *\n      *\n";
+			}
+		}
+	}
+	return 0;
+}
