@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);	// 이렇게 설계한 이유는 - ◆ 해설 1 ◆ 참고
 	int a[300][300] = {}, b, c, d, e[10000] = {}, x[2], y[2];
 	cin >> b >> c;
 	for (int n = 0; n < b; n++) {
@@ -30,6 +30,8 @@ int main() {
 [int a[x[0]][y[0]]] 에서 ~ [int a[x[1]][y[1]]] 까지 연속으로 덧셈을 하여,		// 즉, 행열 시작 지점 [int a[x[0]][y[0]]] 와
 [int e[n] 배열 위치에 누적합의 값을 담은 후에 마지막에 출력하라.			// 끝 지점 [int a[x[0]][y[0]]] 안의 값을 누적 덧셈 해라.
 ==============================================================================
-허나 이러한 방식의 문제가 [for] 반복문을 3중첩으로 하는 작업으로 인해
-빅오(O(n³)) 연산이 매우매우 비효율적이라고 판단되며, 추후 최적화 해보는 걸로
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+cout.tie(NULL);
+처음 제출한 코드보다 연산이 빨라졌다.
 */
