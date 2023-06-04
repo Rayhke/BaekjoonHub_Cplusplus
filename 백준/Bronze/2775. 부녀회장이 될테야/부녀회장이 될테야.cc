@@ -18,3 +18,6 @@ int main() {
 	for (int n = 0; n < b; n++) { cout << e[n] << '\n'; }
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
