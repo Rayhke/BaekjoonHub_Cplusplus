@@ -17,3 +17,6 @@ int main() {
 	cout << p;
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
