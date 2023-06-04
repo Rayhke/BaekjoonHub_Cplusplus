@@ -8,8 +8,8 @@ int main() {
 	cin >> a;
 	for (int n = 0; n < a; n++) {
 		cin >> s;
-		if (s == "push") {
-			cin >> b;
+		if (s == "push") {	// push(푸쉬)
+			cin >> b;	// 스택
 			d[++c] = b;
 		}
 		else if (s == "pop") {
