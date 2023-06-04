@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);// 혹여 연산 시간이 걸릴 것을 상정하여 집어 넣었다. (하지만 굳이 없어도 되지 싶다.)
 	int a[15][15] = {}, b, c, d, e[100000] = {};
 	cin >> b;
 	for (int n = 0; n < 15; n++) { a[0][n] = n + 1; a[n][0] = 1; }	// 0층 값을 미리 1 ~ 14 집어 넣기
