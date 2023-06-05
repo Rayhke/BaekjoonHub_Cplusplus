@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <cmath>	// [pow], [sqrt] 를 사용하기 위한 헤더 파일 - < 설명 1 >
 using namespace std;
 
 inline int s(int a) { return pow(a, 2); }
