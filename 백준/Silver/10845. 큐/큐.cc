@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);	// 시간 초과로 인해 집어넣음
 	int a, b, c = -1, d[10000] = {}, e = 0;
 	string s;
 	cin >> a;
