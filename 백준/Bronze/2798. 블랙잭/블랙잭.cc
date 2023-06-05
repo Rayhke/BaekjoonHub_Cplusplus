@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 	int a[100] = {}, b, c, d = 0, e = 0, N, M;
 	cin >> N >> M;
-	for (int n = 0; n < N; n++) { cin >> a[n]; }			// 최댓값을 빠르게 찾을 경우 아래에서 시작하는 것 보단
+	for (int n = 0; n < N; n++) { cin >> a[n]; }			// [M] 를 초과하지 않는 최댓값을 빠르게 찾을 경우 아래에서 시작하는 것 보단
 	for (int n = 0; n < N - 1; n++) {				// 위로 시작하는 것이 빠르기에, 우선 내림차순으로 정렬한다.
 		b = n;
 		for (int m = n + 1; m < N; m++) {
