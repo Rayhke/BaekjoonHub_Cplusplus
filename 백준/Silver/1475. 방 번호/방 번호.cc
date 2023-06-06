@@ -14,3 +14,7 @@ int main() {
 	else { cout << c; }
 	return 0;
 }
+/* ■ 설명 ■
+
+
+*/
