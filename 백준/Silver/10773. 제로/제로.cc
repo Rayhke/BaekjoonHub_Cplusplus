@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);	// [28ms] 걸리기 때문에 집어 넣음
-	int a, b, c = 0, d = 0, e[100000] = {};
+	int a, b, c = 0, d = 0, e[100000] = {};					// [28ms] 에서 [8ms] 로 단축 시킴
 	cin >> a;
 	for (int n = 0; n < a; n++) {
 		cin >> b;
