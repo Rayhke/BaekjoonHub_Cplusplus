@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-	int N, K, a, b, c;
+	int N, K, a;
 	cin >> N >> K;
 	int* s = new int[N];
 	for (int n = 0; n < N; n++) { s[n] = n + 1; }
