@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	int a, b = 0, c = 0;
+	int a, b = 0, c = 0;		// b는 ' 0 ' , c는 ' 1 '
 	string s; cin >> s; a = s[0];
 	if (s[0] != 49) { b = b + 1; }
 	else { c = c + 1; }
