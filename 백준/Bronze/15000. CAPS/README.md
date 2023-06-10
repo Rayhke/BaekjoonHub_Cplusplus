@@ -1,4 +1,4 @@
-# [Bronze V] CAPS - 15000 
+# [Bronze V] 대문자 - 15000 
 
 [문제 링크](https://www.acmicpc.net/problem/15000) 
 
@@ -12,21 +12,21 @@
 
 ### 문제 설명
 
-<p>Earth is under attack! Messages need to be sent to the Earth Defense Force (EDF) that makes clear that the situation is dire. The EDF’s strongest forces consist of mechs (huge bipedal robots) that are piloted by Japanese teenagers. To make sure that the messages come across as urgent, they must be displayed on the monitors of the pilots in uppercase letters. Unfortunately, the tachyon communication system that is used by the EDF is only able to send strings in lower-case alphabetic characters.</p>
+<p>지구가 공격 받고 있습니다! 상황이 좋지 않다는 것을 알리기 위해 지구 방위군(EDF)에 메시지를 전달해야 합니다. EDF의 최고 정예 부대는 일본인 청소년들이 운용하는 기계(거대한 두 발 보행 로봇)로 이루어져 있습니다. 긴급한 메시지임을 전달하기 위해, 메시지는 로봇 조종사의 모니터에 대문자로 표시되어야 합니다. 불행하게도, EDF가 사용하는 타키온 통신 시스템은 알파벳 소문자 문자열밖에 전송할 수 없습니다.</p>
 
-<p>The set of lower-case alphabetic characters is made up of the following characters: ’a’, ’b’, ’c’, ’d’, ’e’, ’f’, ’g’, ’h’, ’i’, ’j’, ’k’, ’l’, ’m’, ’n’, ’o’, ’p’, ’q’, ’r’, ’s’, ’t’, ’u’, ’v’, ’w’, ’x’, ’y’, ’z’.</p>
+<p>알파벳 소문자는 다음의 문자들로 이루어져 있습니다: ’a’, ’b’, ’c’, ’d’, ’e’, ’f’, ’g’, ’h’, ’i’, ’j’, ’k’, ’l’, ’m’, ’n’, ’o’, ’p’, ’q’, ’r’, ’s’, ’t’, ’u’, ’v’, ’w’, ’x’, ’y’, ’z’.</p>
 
-<p>Your job is to write a program that converts the given messages to upper-case.</p>
+<p>당신은 주어진 메시지를 대문자로 바꾸는 프로그램을 작성해야 합니다.</p>
 
 ### 입력 
 
  <ul>
-	<li>A single line containing a string of length n (10<sup>0</sup> ≤ n ≤ 10<sup>6</sup>), consisting of lower-case alphabetic characters.</li>
+	<li>한 줄에 알파벳 소문자로 이루어진 길이 n (10<sup>0</sup> ≤ n ≤ 10<sup>6</sup>), 의 문자열이 주어집니다.</li>
 </ul>
 
 ### 출력 
 
  <ul>
-	<li>A single line containing the input string where all letters are converted to upper-case letters.</li>
+	<li>입력 문자열의 모든 글자를 대문자로 변환해 한 줄에 출력합니다.</li>
 </ul>
 
