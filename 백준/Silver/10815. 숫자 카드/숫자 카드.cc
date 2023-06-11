@@ -2,8 +2,8 @@
 #include <cstdlib>
 using namespace std;
 
-int com(const void* a, const void* b) {
-    int elt1 = *static_cast<const int*>(a);
+int com(const void* a, const void* b) {		// 아직 제대로 이 기능에 대해
+    int elt1 = *static_cast<const int*>(a);	// 파악하지 못했으므로 완벽한 게 아니다.
     int elt2 = *static_cast<const int*>(b);
     if (elt1 < elt2) { return -1; }
     else if (elt1 > elt2) { return 1; }
