@@ -10,7 +10,7 @@ int main() {
 	cin >> N;
 	for (int n = 0; n < N; n++) { cin >> a[n]; }
 	for (int n = 0; n < N; n++) { cin >> b[n]; }
-	sort(a, a + N); sort(b, b + N, greater<>());
+	sort(a, a + N); sort(b, b + N, greater<>());	// greater 오름차순으로 정렬
 	for (int n = 0; n < N; n++) { S = S + p(a, b, n); }
 	cout << S;
 	return 0;
