@@ -17,6 +17,7 @@ int main() {
 	cout << "<";
 	for (int n = 0; n < N; n++) { cout << s[n]; if ((N - 1) - n) { cout << ", "; } }
 	cout << ">";
+	delete[]s;
 	return 0;
 }
 /*
