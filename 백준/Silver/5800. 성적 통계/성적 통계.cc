@@ -18,7 +18,7 @@ int main() {
 			a[n][b] = c;
 		}
 		a[n][50] = a[n][N - 1];
-		for (int m = 1; m < N; m++) {
+		for (int m = 1; m < N; m++) {		// N 이 아닌 N - 1 로 범위 미스 조작
 			if (a[n][51] < (a[n][m] - a[n][m - 1])) { a[n][51] = a[n][m] - a[n][m - 1]; }
 		}
 	}
