@@ -9,5 +9,6 @@ int main() {
 	for (int n = 0; n < N; n++) { cin >> a[n]; }
 	sort(a, a + N);
 	cout << a[K - 1];
+	delete[]a;
 	return 0;
 }
