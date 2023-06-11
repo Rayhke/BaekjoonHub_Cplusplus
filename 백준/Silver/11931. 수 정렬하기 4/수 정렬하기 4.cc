@@ -13,5 +13,6 @@ int main() {
 		if (n != 1000000 && e[n] != 0) { cout << e[n] << '\n'; }
 		else if (n == 1000000 && e[1000000] != 1) { cout << e[1000000] << '\n'; }
 	}
+	delete[]e;
 	return 0;
 }
