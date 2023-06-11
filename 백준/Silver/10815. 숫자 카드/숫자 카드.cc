@@ -24,8 +24,8 @@ int s(int a, int b[], int e) {
 int main() {
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     int a, c, e; cin >> a;
-	int* b = new int[a];
-	for (int n = 0; n < a; n++) { cin >> b[n]; }
+    int* b = new int[a];
+    for (int n = 0; n < a; n++) { cin >> b[n]; }
     qsort(b, a, sizeof(int), com);
     cin >> c; int* d = new int[c];
     for (int n = 0; n < c; n++) {
@@ -34,5 +34,5 @@ int main() {
     }
     for (int n = 0; n < c; n++) { cout << d[n] << " "; }
     delete[]b, d;
-	return 0;
+    return 0;
 }
