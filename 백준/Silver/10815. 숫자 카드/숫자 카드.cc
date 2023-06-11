@@ -33,6 +33,6 @@ int main() {
         d[n] = s(a, b, e);
     }
     for (int n = 0; n < c; n++) { cout << d[n] << " "; }
-    delete[]b, d;
+    delete[]b, delete[]d;
     return 0;
 }
