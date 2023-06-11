@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int a[2001] = {}, b, c;
 	cin >> b; a[1000] = 1;
 	for (int n = 0; n < b; n++) {
