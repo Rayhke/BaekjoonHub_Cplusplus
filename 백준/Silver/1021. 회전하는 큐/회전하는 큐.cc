@@ -30,11 +30,11 @@ int main() {
 			e += c;
 		}
 		else {
-			for (int m = 0; m < d - 1; m++) {
+			for (int m = 0; m < d; m++) {
 				dq.push_front(dq.back());
 				dq.pop_back();
 			}
-			dq.pop_back();
+			dq.pop_front();
 			e += d;
 		}
 	}
