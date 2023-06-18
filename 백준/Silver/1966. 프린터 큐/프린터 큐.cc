@@ -1,5 +1,5 @@
 #include <iostream>
-#include <queue>
+#include <queue>	// [queue] 를 사용하기 위한 헤더 파일 - < 설명 1 > 참고
 using namespace std;
 
 queue <int> q;	// 배열
@@ -32,7 +32,12 @@ int main() {
 	while (!v.empty()) { cout << v.front() << '\n'; v.pop(); }
 	return 0;
 }
-/*
+/* ■ 설명 ■
+< 설명 1 >
+[queue] 전형적인 자료 구조 ' 큐 ' 를 사용하기 위하여 사용
+' 스택 ' 과 다른 점은 ' pop() ' 이 가장 앞자리에서 빼옴
+=========================================================
+
 [검증 테스트용 코드]
 #include <iostream>
 #include <queue>
