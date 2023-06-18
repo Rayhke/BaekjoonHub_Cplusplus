@@ -17,3 +17,6 @@ int main() {
 	delete[]p;
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
