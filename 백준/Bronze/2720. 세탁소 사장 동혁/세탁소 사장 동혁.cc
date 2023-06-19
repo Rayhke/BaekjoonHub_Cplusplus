@@ -14,7 +14,12 @@ int main() {
 			else { p[n][3] = C; break; }
 		}
 	}
-	for (int n = 0; n < T; n++) { cout << p[n][0] << " " << p[n][1] << " " << p[n][2] << " " << p[n][3] << '\n'; }
+	for (int n = 0; n < T; n++) {
+		for (int m = 0; m < 4; m++) {
+			cout << p[n][m] << " ";
+		}
+		cout << '\n';
+	}
 	for (int n = 0; n < T; n++) { delete[]p[n]; }
 	delete[]p;
 	return 0;
