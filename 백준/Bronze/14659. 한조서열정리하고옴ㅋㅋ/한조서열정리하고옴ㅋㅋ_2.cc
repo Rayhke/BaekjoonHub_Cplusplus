@@ -21,3 +21,7 @@ int main() {
 	delete[]p;
 	return 0;
 }
+/* ■ 설명 ■
+메모리 [2020KB]
+시간 [176ms]
+*/
