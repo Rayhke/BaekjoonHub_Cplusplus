@@ -5,7 +5,7 @@ inline int s(int p, int q, int r) { return ((p - q) < r) ? (p - q) : r; }
 
 int main() {
 	int a, b, c, d, e = 1000;
-	cin >> a >> b >> c;		↙	// 목적지 주파수가 현재 위치 주파수 보다 위인지 아래인지 찾는 값이자
+	cin >> a >> b >> c;		//↙	// 목적지 주파수가 현재 위치 주파수 보다 위인지 아래인지 찾는 값이자
 	a = (a > b) ? (a - b) : (b - a);	// 동시에 다이얼을 직접 조작 하였을 때, 조작 횟수 카운트
 	for (int n = 0; n < c; n++) {
 		cin >> d;
