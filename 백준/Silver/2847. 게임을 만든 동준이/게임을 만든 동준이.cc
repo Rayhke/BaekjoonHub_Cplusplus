@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int a[100] = {}, b = 0, N; cin >> N;
 	for (int n = 0; n < N; n++) { cin >> a[n]; }
 	for (int n = N - 1; n > 0; n--) {
