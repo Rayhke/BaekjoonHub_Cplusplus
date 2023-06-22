@@ -1,4 +1,4 @@
-# [Bronze IV] Abbey Courtyard - 15610 
+# [Bronze IV] 수도원 뜰 - 15610 
 
 [문제 링크](https://www.acmicpc.net/problem/15610) 
 
@@ -12,21 +12,21 @@
 
 ### 문제 설명
 
-<p>Bath’s annual Christmas market runs from the 23rd of November 2017 until the 10th of December 2017. During this time, the market will occupy the entire square courtyard of Bath Abbey.</p>
+<p>연마다 돌아오는 배스의 크리스마스 시장은 2017년 11월 23일부터 2017년 12월 10일까지 계속됩니다. 이 기간 동안, 시장은 배스 수도원 속 정사각형 형태의 뜰 전체를 사용할 것입니다.</p>
 
-<p>To brighten things up at night, a single long strand of cheerful festive lights will be run along all four equally long edges of the courtyard.</p>
+<p>밤을 환히 밝히기 위해, 한 줄로 된 화려한 축제 불빛이 뜰의 동일한 길이의 네 변을 따라 설치될 것입니다.</p>
 
-<p>You will be in charge of buying the electrical wiring to which the lights will be affixed. How much will you need to use to outline the whole Christmas market with festive lights?</p>
+<p>당신은 불빛을 붙일 전선을 사야 합니다. 크리스마스 시장을 축제 불빛으로 감싸기 위해 얼마만큼 전선이 필요합니까?</p>
 
 ### 입력 
 
- <p>The input consists of:</p>
+ <p>입력은 아래의 내용을 포함합니다.</p>
 
 <ul>
-	<li>One line with an integer a (1 ≤ a ≤ 10<sup>18</sup>), the area in square metres of the yard.</li>
+	<li>뜰의 넓이를 m<sup>2</sup>(제곱 미터) 기준으로 나타낸 하나의 정수 a (1 ≤ a ≤ 10<sup>18</sup>), 가 한 줄에 주어집니다.</li>
 </ul>
 
 ### 출력 
 
- <p>Output the total length of electrical wiring needed for the market, in metres. The length should be accurate to an absolute or relative error of at most 10<sup>−6</sup>.</p>
+ <p>m(미터) 기준으로 시장에 필요한 전선의 총 길이를 출력합니다. 길이는 정답과 최대 10<sup>−6</sup> 의 절대 또는 상대 오차를 가질 수 있습니다.</p>
 
