@@ -5,7 +5,7 @@ int main() {
 	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	float a, b, c = 0, d = 0; string s;
 	for (int n = 0; n < 20; n++) {
-		cin >> s >> a >> s; b = 0;
+		cin >> s >> a >> s; b = 0;				// 솔직하게 이 부분은 꼼수가 맞다.
 		if (s != "F") {
 			if (s == "A+") { b = 4.5; }
 			else if (s == "A0") { b = 4.0; }
@@ -23,3 +23,6 @@ int main() {
 	cout << c / d;
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
