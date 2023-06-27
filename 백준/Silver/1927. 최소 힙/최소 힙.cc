@@ -5,7 +5,7 @@ using namespace std;
 priority_queue <int, vector<int>, greater<int>> pq;
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	ios::sync_with_stdio(false); cin.tie(NULL);
 	int a, N; cin >> N;
 	for (int n = 0; n < N; n++) {
 		cin >> a;
