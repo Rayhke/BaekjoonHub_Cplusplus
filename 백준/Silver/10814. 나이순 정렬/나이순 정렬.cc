@@ -20,4 +20,8 @@ int main() {
 아직까지는 vector 기능을 완벽하게 이해한 것이 아니기에 한동안은 크기를 미리 지정하는 식으로 하길 권장
 
 stable_sort 이 정렬은 sort와 달리 입력된 순서를 최대한 보존해주는 특이한 정렬 함수이다.
+
+https://notepad96.tistory.com/37
+
+https://dpdpwl.tistory.com/39
 */
