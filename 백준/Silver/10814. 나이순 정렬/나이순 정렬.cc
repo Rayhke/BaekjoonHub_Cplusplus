@@ -12,6 +12,7 @@ bool p(tuple<int, int, string> v1, tuple<int, int, string> v2) {
 }
 
 int main() {
+	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int a, b; string s; cin >> a;
 	for (int n = 0; n < a; n++) {
 		cin >> b >> s;
