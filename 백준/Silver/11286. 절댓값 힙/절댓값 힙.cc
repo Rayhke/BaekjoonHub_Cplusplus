@@ -25,3 +25,10 @@ int main() {
 	}
 	return 0;
 }
+/* ■ 설명 ■
+클래스를 선언하는 것과 bool operator()(const int& a, const int& b)const 연산까진 도움을 받았어도
+조건문은 스스로 완성했다.
+추후 다른 사람의 도움 없이 처음부터 완벽한 코드를 짜보길 바란다...
+
+abs는 절댓값 기능
+*/
