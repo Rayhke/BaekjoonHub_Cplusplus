@@ -31,4 +31,7 @@ int main() {
 추후 다른 사람의 도움 없이 처음부터 완벽한 코드를 짜보길 바란다...
 
 abs는 절댓값 기능
+
+constexpr bool operator()(const int& a, const int& b)const 으로 선언하면
+'constexpr' 가 성능적인 이점을 주는 듯 하다.
 */
