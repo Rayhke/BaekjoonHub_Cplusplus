@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	ios::sync_with_stdio(false); cin.tie(NULL);
+	int a, b; string s; cin >> a >> s;
+	unsigned long long c = 0, d = 1;
+	for (int n = 0; n < a; n++) {
+		b = s[n] - 96;
+		c = (c + (b * d)) % 1234567891;
+		d = (d * 31) % 1234567891;
+	}
+	cout << c;
+	return 0;
+}
