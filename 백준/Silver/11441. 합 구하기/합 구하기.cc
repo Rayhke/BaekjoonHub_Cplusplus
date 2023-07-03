@@ -7,7 +7,7 @@ vector <int> v;
 queue <int> q;
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	ios::sync_with_stdio(false); cin.tie(NULL);
 	int a, b, c = 0; cin >> a;
 	for (int n = 0; n < a; n++) {
 		if (n > 0) { c = v[n - 1]; }
