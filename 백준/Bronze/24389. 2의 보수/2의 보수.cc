@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(NULL);
     int a, b, c = 0; string s = "", p = "";
     cin >> a; b = ~a + 1;               // 2의 보수는 모든 비트를 반전 후, + 1
     for (int n = 31; n > -1; n--) {
