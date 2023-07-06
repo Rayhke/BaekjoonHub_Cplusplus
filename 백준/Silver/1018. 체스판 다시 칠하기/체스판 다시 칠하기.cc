@@ -14,11 +14,11 @@ int main() {
 	while (1) {
 		for (int n = y; n < y + 8; n++) {
 			for (int m = x; m < x + 8; m++) {
-				if (bp[n][m] != cp[ap]) { B++; }
-				else { W++; }
-				ap = !ap;
+				if (bp[n][m] != cp[ap]) { B++; }	// 현재의 위치 값이 다른 경우
+				else { W++; }				// 현재의 위치 값이 같은 경우
+				ap = !ap;	// 반복할 때, 마다 cp의 값이 유기적으로 전환
 			}
-			ap = !ap;
+			ap = !ap;		// 이것 또한 포함
 		}
 		O = (B < W) ? B : W;
 		P = (O < P) ? O : P; B = 0; W = 0; O = 0;
