@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
 	bool ap = 0; char bp[51][51] = {}, cp[2] = { 'B','W' };
 	int x = 0, y = 0, N, M, B = 0, W = 0, O = 0, P = 3000;
 	cin >> N >> M;
