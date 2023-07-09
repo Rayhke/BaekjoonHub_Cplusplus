@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 	ios::sync_with_stdio(false); cin.tie(NULL);
-	int A, D, N, M; cin >> N >> M;
+	int A, N, M; cin >> N >> M;
 	vector <int> v(N);
 	for (int n = 0; n < N; n++) { cin >> v[n]; }
 	sort(v.begin(), v.end());
