@@ -17,7 +17,6 @@ int s(int N, int K, vector <int> w, vector <int> v) {
 }
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
 	int N, W, V, X; cin >> N;
 	vector<int> w(N), v(N);
 	for (int n = 0; n < N; n++) { cin >> W; w[n] = W; }
