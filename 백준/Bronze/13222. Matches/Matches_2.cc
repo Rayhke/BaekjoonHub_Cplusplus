@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(NULL);
+	ios::sync_with_stdio(false); cin.tie(NULL);
 	int N; float M, W, H; cin >> N >> W >> H;
 	H = sqrt((float)pow(W, 2.0) + (float)pow(H, 2.0));
 	for (int n = 0; n < N; n++) {
