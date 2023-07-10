@@ -34,3 +34,6 @@ int main() {
 	else { cout << "I'm Sorry Hansoo"; }
 	return 0;
 }
+/* ■ 설명 ■
+스택의 원리를 이용하여 문자열을 뒤집기
+*/
