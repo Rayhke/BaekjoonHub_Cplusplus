@@ -33,3 +33,6 @@ int main() {
 	else { cout << "I'm Sorry Hansoo"; }
 	return 0;
 }
+/* ■ 설명 ■
+reverse 기능을 이용해 문자열을 뒤집기
+*/
