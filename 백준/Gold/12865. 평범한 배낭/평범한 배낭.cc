@@ -3,9 +3,9 @@
 #include <algorithm>
 using namespace std;
 
-int s(int N, int K, vector <int> w, vector <int> v) {
+int s(int N, int K, vector <int> w, vector <int> v) {	// 물건 총 갯수, 한도 무게, 각 물건 무게, 각 물건 값어치
 	int Ws, Vs;
-	vector<vector<int>> DP(N + 1, vector<int>(K + 1, 0));
+	vector<vector<int>> DP(N + 1, vector<int>(K + 1, 0));	// 2차원 배열로 선언 [열 : N + 1], [행 : K + 1] 원소 0으로 초기화
 	for (int n = 1; n <= N; n++) {
 		Ws = w[n - 1]; Vs = v[n - 1];
 		for (int m = 1; m <= K; m++) {
@@ -18,7 +18,7 @@ int s(int N, int K, vector <int> w, vector <int> v) {
 
 int main() {
 	int N, K, W, V, X; cin >> N >> K;
-	vector<int> w(N), v(N);
+	vector<int> w(N), v(N);			// 무게, 가격
 	for (int n = 0; n < N; n++) {
 		cin >> W >> V;
 		w[n] = W; v[n] = V;
