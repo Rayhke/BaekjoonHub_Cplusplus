@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <cmath>
 using namespace std;
 
@@ -15,3 +14,8 @@ int main() {
 	cout << abs(a[1][0] - a[0][0]) + abs(a[1][1] - a[0][1]);
 	return 0;
 }
+/* ■ 설명 ■
+[오답 원인]
+문제의 설명을 자세히 읽지 않은 것,
+√(x² + y²) 를 구하는 것이 아니다.
+*/
