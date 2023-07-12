@@ -6,9 +6,9 @@ using namespace std;
 
 int main() {
 	ios::sync_with_stdio(false); cin.tie(NULL);
-	int N, M = 0; double p, q = 0, r = 0.1500; cin >> N;
+	int N, M = 0; double p, q = 0; cin >> N;
 	vector <int> v(N);
-	p = round((double)N * r);
+	p = round((double)N * 0.15);
 	M = N - (p * 2);
 	for (int n = 0; n < N; n++) { cin >> v[n]; }
 	sort(v.begin(), v.end());
@@ -17,3 +17,8 @@ int main() {
 	else { cout << 0; }
 	return 0;
 }
+/* ■ 설명 ■
+[오답 원인]
+[N] 이 ' 0 ' 으로 입력 되었을 때
+' 0 ' 이 출력 되는 것이 아닌, ' -nan(ind) ' 가 출력된다.
+*/
