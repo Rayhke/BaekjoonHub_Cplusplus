@@ -12,7 +12,7 @@ int main() {
 	cin >> M;
 	for (int R = N - 1; R > -1; R--) {
 		if (X >= R) { break; }				// 만약 [L] 자릿 값이 [R] 보다 커질 경우 (중복 원소가 존재 하지 않으므로, '6 + 6 = 12' 가 되는 경우는 없다.)
-		for (int L = X; L < R; L++) {			// 
+		for (int L = X; L < R; L++) {			// 조합 가능한 경우의 수를 다 탐색한 것 이므로, 반복문을 종료한다.
 			S = v[L] + v[R];
 			if (S == M) { P++; X = L + 1; break; }
 			else if (S > M) { break; }
