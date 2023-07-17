@@ -1,5 +1,5 @@
 #include <iostream>
-#include <algorithm>
+#include <algorithm>	// sort 
 using namespace std;
 
 inline int p(int a[], int b[], int n) { return a[n] * b[n]; }
