@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <string>	[getline] 를 사용하기 위한 헤더 파일 - < 설명 1 > 참고
 using namespace std;
 
 int main() {
