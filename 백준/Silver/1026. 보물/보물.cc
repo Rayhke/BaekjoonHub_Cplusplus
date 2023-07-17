@@ -1,5 +1,5 @@
 #include <iostream>
-#include <algorithm>	// sort 
+#include <algorithm>	// [sort] 를 사용하기 위한 헤더 파일 - < 설명 1 > 참고
 using namespace std;
 
 inline int p(int a[], int b[], int n) { return a[n] * b[n]; }	// 인라인 함수로 연산 빠르게 설계
