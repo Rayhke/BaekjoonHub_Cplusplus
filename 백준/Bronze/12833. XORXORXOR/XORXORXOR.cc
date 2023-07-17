@@ -6,7 +6,7 @@ inline int s(int a, int b) { return a ^ b; }
 int main() {
     ios::sync_with_stdio(false); cin.tie(NULL);
     int a, b, c; cin >> a >> b >> c;
-    if (c & 1) { cout << s(a, b); }            // [1 byte = 8 bit] 0000 000'0' 자리가 있다고 한다면
+    if (c & 1) { cout << s(a, b); }            // [1 byte = 8 bit] 0000 000'0' 자리가 있다고 한다면                    // 2^0 = 1
     else { cout << a; }                        // 가장 첫 번째 자리 비트가 ' 1 ' 인지 검증하는 방식으로 홀수 짝수 구분
     return 0;
 }
