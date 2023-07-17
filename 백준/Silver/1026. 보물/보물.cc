@@ -2,14 +2,14 @@
 #include <algorithm>	// sort 
 using namespace std;
 
-inline int p(int a[], int b[], int n) { return a[n] * b[n]; }
+inline int p(int a[], int b[], int n) { return a[n] * b[n]; }	// 인라인 함수로 연산 빠르게 설계
 
 int main() {
 	int a[50] = {}, b[50] = {}, N, S = 0;
 	cin >> N;
 	for (int n = 0; n < N; n++) { cin >> a[n]; }
 	for (int n = 0; n < N; n++) { cin >> b[n]; }
-	sort(a, a + N); sort(b, b + N, greater<>());	// greater 오름차순으로 정렬
+	sort(a, a + N); sort(b, b + N, greater<>());		// greater 오름차순으로 정렬
 	for (int n = 0; n < N; n++) { S = S + p(a, b, n); }
 	cout << S;
 	return 0;
