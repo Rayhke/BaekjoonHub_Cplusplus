@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-	int a[2], b[2], c, d; cin >> a[0] >> a[1] >> b[0] >> b[1];
+	int a[2], b[2], c, d;
+	cin >> a[0] >> a[1] >> b[0] >> b[1];
 	c = lcm(a[1], b[1]);
 	a[0] *= c / a[1]; b[0] *= c / b[1];
 	d = gcd(a[0] + b[0], c);
