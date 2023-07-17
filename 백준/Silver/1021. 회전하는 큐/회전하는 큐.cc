@@ -5,7 +5,6 @@ using namespace std;
 deque <int> dq;
 
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	int a, b, c = 0, d = 0, e = 0, N, M; cin >> N >> M;
 	for (int n = 0; n < N; n++) { dq.push_back(n + 1); }
 	for (int n = 0; n < M; n++) {
