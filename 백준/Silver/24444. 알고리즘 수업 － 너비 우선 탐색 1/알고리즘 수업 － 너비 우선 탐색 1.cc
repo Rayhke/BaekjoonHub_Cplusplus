@@ -5,20 +5,20 @@
 using namespace std;
 
 vector <int> v[100001];
-int w[100001] = { 0, };
-bool r[100001] = { 0, };
+int w[100001] = {};
+bool r[100001] = {};
 
 void B(int R) {
 	int S = 1;
 	queue <int> q; q.push(R);
-	r[R] = 1; w[R] = S;				// 방문 체크, 방문한 간선 순서 체크
+	r[R] = 1; w[R] = S;
 	while (!q.empty()) {
 		int X = q.front(); q.pop();
 		for (int n = 0; n < v[X].size(); n++) {
 			int Y = v[X][n];
 			if (!r[Y]) {
 				S++;
-				r[Y] = 1; w[Y] = S;	// 방문 체크, 방문한 간선 순서 체크
+				r[Y] = 1; w[Y] = S;
 				q.push(Y);
 			}
 		}
