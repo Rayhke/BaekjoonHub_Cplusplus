@@ -1,7 +1,5 @@
 #include <iostream>
-#include <vector>
 #include <stack>
-#include <algorithm>
 using namespace std;
 
 stack <int> X;
@@ -23,7 +21,7 @@ void D(int x, int y, int N, int M) {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
+    cin.tie(NULL);
 	int T, N, M, K, P, x, y; cin >> T;
 	for (int n = 0; n < T; n++) {
 		cin >> M >> N >> K; P = 0;
