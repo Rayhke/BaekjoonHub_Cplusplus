@@ -6,7 +6,7 @@ using namespace std;
 
 stack <int> X;
 stack <int> Y;
-bool r[51][51];
+bool r[50][50];
 
 void D(int x, int y, int N, int M) {
 	X.push(x); Y.push(y);
