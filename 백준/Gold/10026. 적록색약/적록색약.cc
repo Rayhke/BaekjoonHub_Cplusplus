@@ -10,7 +10,7 @@ bool q[100][100];
 int N;
 
 void D(int n, int m) {
-	x.push(m); y.push(n); char C = v[n][m];
+	x.push(m); y.push(n); char C = v[n][m];		// main 에서 ' n ' 와 ' m ' 의 역할과 여기서 ' x ' 와 ' y ' 역할이 헷갈렸음 (거꾸로)
 	while (!x.empty() && !y.empty()) {
 		int X = x.top(), Y = y.top(); x.pop(); y.pop();
 		if (!r[Y][X] && v[Y][X] == C) {
