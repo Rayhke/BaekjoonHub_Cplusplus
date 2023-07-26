@@ -39,7 +39,6 @@ void G(int n, int m) {
 
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
 	int P = 0, Q = 0; cin >> N;
 	for (int n = 0; n < N; n++) {
 		for (int m = 0; m < N; m++) {
