@@ -4,7 +4,7 @@
 using namespace std;
 
 vector <vector<char>> v(100, vector<char>(100));
-stack <int> x; stack <int> y;
+stack <int> x, y;
 bool r[100][100];
 bool q[100][100];
 int N;
