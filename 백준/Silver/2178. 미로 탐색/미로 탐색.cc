@@ -32,3 +32,12 @@ int main() {
 	cout << w[N - 1][M - 1];
 	return 0;
 }
+/* ■ 설명 ■
+[작동 체크용 코드] (31번 줄 이후에 삽입)
+for (int n = 0; n < N; n++) {
+		for (int m = 0; m < M; m++) {
+			cout << w[n][m] << ' ';
+		}
+		cout << '\n';
+	}
+*/
