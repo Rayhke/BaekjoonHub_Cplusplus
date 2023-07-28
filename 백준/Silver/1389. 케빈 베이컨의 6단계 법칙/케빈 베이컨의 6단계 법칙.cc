@@ -21,8 +21,7 @@ void B(int m,int N) {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
-	int N, M, P = 1000000000, x, y; cin >> N >> M;
+	int N, M, P = 300, x, y; cin >> N >> M;
 	for (int n = 0; n < M; n++) {
 		cin >> x >> y;
 		v[x].push_back(y);
