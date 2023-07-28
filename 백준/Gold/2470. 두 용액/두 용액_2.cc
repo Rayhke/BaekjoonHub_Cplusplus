@@ -19,7 +19,7 @@ void V(vector <int> v, int N) {
 }
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(NULL);
+	ios::sync_with_stdio(false); cin.tie(NULL);
 	int N; cin >> N; vector <int> v(N);
 	for (int n = 0; n < N; n++) { cin >> v[n]; }
 	sort(v.begin(), v.end()); V(v, N);
