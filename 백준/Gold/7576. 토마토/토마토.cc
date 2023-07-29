@@ -2,7 +2,7 @@
 #include <queue>
 using namespace std;
 
-int v[1000][1000], DX[4] = { 1,0,-1,0 }, DY[4] = { 0,1,0,-1 }; // 동서남북
+int v[1000][1000], DX[4] = { 1,0,-1,0 }, DY[4] = { 0,1,0,-1 };
 queue <pair<int, int>> q;
 
 void B(short M, short N) {
