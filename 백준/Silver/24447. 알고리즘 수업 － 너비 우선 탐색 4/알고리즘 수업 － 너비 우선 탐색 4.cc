@@ -5,7 +5,7 @@
 using namespace std;
 
 vector <int> v[100001];
-int w[100001], W[100001], S = 1;
+int w[100001], W[100001], S = 1;	// 배열 구성 문제 발생
 bool r[100001];
 
 void B(int R) {
@@ -31,8 +31,12 @@ int main() {
 	for (int n = 1; n <= N; n++) { sort(v[n].begin(), v[n].end()); }
 	B(R); M = 0;
 	for (int n = 1; n <= N; n++) {
-		if (W[n] != -1) { P += ((long long)w[n] * W[n]); M++; if (M == S) { break; } }
+		if (W[n] != -1) { P += ((long long)w[n] * W[n]); M++; if (M == S) { break; } }	// int * int 로 인해 타입 에러 발생
 	}
 	cout << P;
 	return 0;
 }
+/* ■ 설명 ■
+[오답 원인]
+8번 째 줄, 34번 째 줄
+*/
