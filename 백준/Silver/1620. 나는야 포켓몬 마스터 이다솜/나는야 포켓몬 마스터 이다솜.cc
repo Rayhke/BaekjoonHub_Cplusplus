@@ -2,7 +2,7 @@
 #include <vector>
 #include <map>
 #include <string>
-#include <cctype>
+#include <cctype>	// isdigit // 문자열이 숫자인지 아닌지 탐색용
 using namespace std;
 
 int main() {
