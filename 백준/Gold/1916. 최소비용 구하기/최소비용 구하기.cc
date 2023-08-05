@@ -7,7 +7,7 @@ vector <pair<int, int>> v[1001];
 int w[1001];
 
 void V(int A,int B) {
-	priority_queue <pair<int, int>, vector <pair<int, int>>, greater<pair<int, int>>> pq;
+	priority_queue <pair<int, int>, vector <pair<int, int>>, greater<pair<int, int>>> pq;	// 사용한 의도는 우선순위 큐를 int형 pair 사이즈로 현재 노드 위치의 비용을 오름차순 정렬
 	pq.push({ 0,A }); w[A] = 0;
 	while (!pq.empty()) {
 		int X = pq.top().second, S = pq.top().first; pq.pop();
