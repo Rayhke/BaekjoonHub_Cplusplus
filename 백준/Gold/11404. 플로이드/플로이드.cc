@@ -22,7 +22,7 @@ vector <vector<int>> V(int N) {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
+	ios::sync_with_stdio(false); cout.tie(NULL);
 	int N, M, x, y, z; cin >> N >> M;
 	for (int n = 0; n < M; n++) {
 		cin >> y >> x >> z;
