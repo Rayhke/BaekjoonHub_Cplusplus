@@ -11,7 +11,8 @@ vector <vector<int>> V(int N) {
 		for (int m = 1; m < N; m++) { d[n][m] = v[n][m]; }
 		d[n][n] = 0;
 	}
-	for (int m = 1; m < N; m++) {
+	
+	for (int m = 1; m < N; m++) {			// 요약하자면 거쳐서 도착 지점이 빠르냐, 바로 도착 지점 가는 게 빠르냐
 		for (int s = 1; s < N; s++) {
 			for (int e = 1; e < N; e++) {
 				if (d[s][e] > d[s][m] + d[m][e]) { d[s][e] = d[s][m] + d[m][e]; }
