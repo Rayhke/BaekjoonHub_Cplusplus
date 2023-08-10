@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <algorithm>
 using namespace std;
 
-int U = 1e9, D;
+int U = 1e9;
 vector <pair<int, int>> v[50001];
 
 void V(int E) {
@@ -14,7 +13,7 @@ void V(int E) {
 	while (!pq.empty()) {
 		int X = pq.top().second, S = pq.top().first; pq.pop();
 		if (w[X] < S) { continue; }
-		if (X == E) { D = S; return; }
+		if (X == E) { cout << S; return; }
 		for (const auto& n : v[X]) {
 			int Y = n.second, P = n.first;
 			if (w[Y] > w[X] + P) { w[Y] = w[X] + P; pq.push({ w[Y],Y }); }
@@ -31,8 +30,6 @@ int main() {
 		v[x].push_back({ z,y });
 		v[y].push_back({ z,x });
 	}
-	for (int n = 1; n <= N; n++) { sort(v[n].begin(), v[n].end()); }
 	V(N);
-	cout << D;
 	return 0;
 }
