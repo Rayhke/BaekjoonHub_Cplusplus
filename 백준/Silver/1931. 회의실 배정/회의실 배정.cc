@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	ios::sync_with_stdio(false);
+	ios::sync_with_stdio(false); cin.tie(NULL);
 	vector <pair<int, int>> v;
 	int N, M = 0, L = 1, P = 1; cin >> N;
 	for (int n = 0; n < N; n++) {
