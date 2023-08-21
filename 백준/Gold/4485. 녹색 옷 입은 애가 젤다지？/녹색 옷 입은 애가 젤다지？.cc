@@ -34,3 +34,6 @@ int main() {
 	}
 	return 0;
 }
+/* ■ 설명 ■
+priority_queue<pair<int,pair<int, int>>>pq; 이러한 구조로 쓸 수 있는 방법도 있다..;
+*/
