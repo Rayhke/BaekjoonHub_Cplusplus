@@ -39,3 +39,6 @@ int main() {
 	V(N + 1);
 	return 0;
 }
+/* ■ 설명 ■
+SPFA 알고리즘 참조
+*/
