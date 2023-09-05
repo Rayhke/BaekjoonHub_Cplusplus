@@ -1,6 +1,6 @@
 # [Gold IV] 플로이드 - 11404 
 
-[문제 링크]([https://www.acmicpc.net/problem/11404]) 
+[문제 링크](https://www.acmicpc.net/problem/11404) 
 
 ### 성능 요약
 
