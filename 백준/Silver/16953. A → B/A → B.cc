@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-	ios::sync_with_stdio(false);
 	bool R = 1; int A, B, U = 1e9 + 1; cin >> A >> B;
 	queue <pair<long long, int>> q; q.push({ A,1 });
 	while (!q.empty()) {
