@@ -20,7 +20,6 @@ void V(int W, int P) {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
 	cin >> N >> M; V(1, 0);
 	return 0;
 }
