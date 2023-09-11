@@ -3,7 +3,7 @@
 using namespace std;
 
 int N, M;
-vector <int> v(9, 0);
+vector <int> v(8, 0);
 vector <bool> r(9, 1);
 
 void V(int W, int P) {
