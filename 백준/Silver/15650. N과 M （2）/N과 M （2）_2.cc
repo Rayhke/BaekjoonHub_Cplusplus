@@ -2,7 +2,7 @@
 using namespace std;
 
 bool r[9];
-int N, M, v[9];
+int N, M, v[8];
 
 void V(int W, int P) {
 	if (P == M) {
