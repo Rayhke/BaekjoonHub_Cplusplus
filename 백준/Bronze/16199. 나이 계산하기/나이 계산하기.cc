@@ -9,6 +9,6 @@ int main() {
 	else if (M2 == M1 && D2 >= D1) { A = Y2 - Y1; }
 	else { A = Y2 - Y1 - 1; }
 	B = Y2 - Y1;
-	std::cout << A << '\n' << B + 1 << '\n' << B;
+	cout << A << '\n' << B + 1 << '\n' << B;
 	return 0;
 }
