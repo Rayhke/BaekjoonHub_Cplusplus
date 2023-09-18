@@ -33,7 +33,7 @@ void V() {
 }
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
+	ios::sync_with_stdio(false);
 	cin >> N >> M;
 	for (int n = 0; n < N; n++) {
 		for (int m = 0; m < M; m++) {
