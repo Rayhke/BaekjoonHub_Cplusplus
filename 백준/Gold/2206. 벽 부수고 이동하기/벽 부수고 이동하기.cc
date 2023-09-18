@@ -5,7 +5,7 @@ using namespace std;
 
 bool v[1000][1000], r[1000][1000][2];
 int N, M, PX[] = { 1,-1,0,0 }, PY[] = { 0,0,1,-1 };
-queue <pair<pair<int, int>, pair<int, int>>> q;
+queue <pair<pair<int, int>, pair<int, int>>> q;		// 앞의 pair는 y축, x축 탐색용 // 뒤의 pair는 벽을 부순 적 있는 지 체크, 누적 탐사 칸
 
 void V() {
 	r[0][0][0] = 1; r[0][0][1] = 1;
@@ -13,23 +13,23 @@ void V() {
 	while (!q.empty()) {
 		bool R = q.front().second.first;
 		int x = q.front().first.second, y = q.front().first.first, P = q.front().second.second; q.pop();
-		if (x == M - 1 && y == N - 1) { cout << P; return; }
+		if (x == M - 1 && y == N - 1) { cout << P; return; }	// 목적지에 도착 했다면, 누적 값 출력 후 종료
 		for (int n = 0; n < 4; n++) {
 			int X = x + PX[n], Y = y + PY[n];
 			if (-1 < X && X < M && -1 < Y && Y < N && !r[Y][X][R]) {
-				if (!R) {
+				if (!R) {				// 벽을 한 번도 부순 적 없음
 					r[Y][X][0] = 1;
-					if (!v[Y][X]) { q.push({ {Y,X},{0,P + 1} }); }
-					else { q.push({ {Y,X},{1,P + 1} }); }
+					if (!v[Y][X]) { q.push({ {Y,X},{0,P + 1} }); }		// 그렇다면 갈 수 있는 길이 있는가?
+					else { q.push({ {Y,X},{1,P + 1} }); }			// 벽이 있다면 지우고 간다.
 				}
-				else if (!v[Y][X]) {
+				else if (!v[Y][X]) {			// 이미 벽을 부쉈음
 					r[Y][X][1] = 1;
 					q.push({ {Y,X},{1,P + 1} });
 				}
 			}
 		}
 	}
-	cout << -1;
+	cout << -1;							// 이 경우는 목적지에 도달하지 못했을 경우
 }
 
 int main() {
