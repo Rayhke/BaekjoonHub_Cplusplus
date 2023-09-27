@@ -22,7 +22,6 @@ void V() {
 }
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
 	cin >> M >> N;
 	for (int n = 0; n < N; n++) {
 		for (int m = 0; m < M; m++) {
