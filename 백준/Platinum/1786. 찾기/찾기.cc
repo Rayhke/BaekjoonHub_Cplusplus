@@ -5,7 +5,7 @@ using namespace std;
 
 int P = 0;
 string S, K;
-vector <int> w;
+vector <int> w;	// 문자열 ' S ' 안에 ' K ' 가 나타난 index 위치를 기록하는 용도 
 
 vector <int> KMP_Preprocess() {
 	int n = 0, m = -1;
