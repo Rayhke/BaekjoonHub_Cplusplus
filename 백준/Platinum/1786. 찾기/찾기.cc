@@ -5,7 +5,7 @@ using namespace std;
 
 int P = 0;
 string S, K;
-vector <int> w;	// 문자열 ' S ' 안에 ' K ' 가 나타난 index 위치를 기록하는 용도 
+vector <int> w;							// 문자열 ' S ' 안에 ' K ' 가 나타난 index 위치를 기록하는 용도 
 
 vector <int> KMP_Preprocess() {
 	int n = 0, m = -1;
@@ -39,3 +39,8 @@ int main() {
 	for (const auto& n : w) { cout << n << ' '; }
 	return 0;
 }
+/* ■ 설명 ■
+전형적인 KMP 알고리즘을 이용하여,
+문자열 ' S ' 안에 문자열 ' K ' 가 몇개 존재하는 지와
+어느 index 위치에 존재하는 지를 출력하는 문제이다.
+*/
