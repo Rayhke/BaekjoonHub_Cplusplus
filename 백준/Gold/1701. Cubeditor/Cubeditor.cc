@@ -24,6 +24,6 @@ int main() {
 	return 0;
 }
 /* ■ 설명 ■
-KMP 문자열 알고리즘을 응용하여, 다른 방식 (Fail Function, 실패함수) 으로 해결하는 형태다.
+KMP 문자열 알고리즘을 응용하여, 다른 방식 (KMP Fail Function, 실패함수) 으로 해결하는 형태다.
 ' substr ' 는 (index_1, index_2) 이며 index_1 에서 index_2 까지의 string 문자열의 일부를 따오는 함수
 */
