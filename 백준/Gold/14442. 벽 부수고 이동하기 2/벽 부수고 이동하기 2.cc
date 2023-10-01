@@ -13,7 +13,7 @@ void V() {
 	while (!q.empty()) {
 		int x = q.front().first.second, y = q.front().first.first;
 		int P = q.front().second.second, R = q.front().second.first; q.pop();
-		if (x == M - 1 && y == N - 1) { std::cout << P; return; }
+		if (x == M - 1 && y == N - 1) { cout << P; return; }
 		for (int n = 0; n < 4; n++) {
 			int X = x + PX[n], Y = y + PY[n];
 			if (X < 0 || M <= X || Y < 0 || N <= Y || r[Y][X][R]) { continue; }
@@ -32,7 +32,7 @@ void V() {
 			}
 		}
 	}
-	std::cout << -1;
+	cout << -1;
 }
 
 int main() {
