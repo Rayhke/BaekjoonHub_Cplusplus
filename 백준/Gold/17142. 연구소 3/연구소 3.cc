@@ -53,7 +53,6 @@ void B(int L, int O) {
 }
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
 	cin >> N >> M;
 	for (int n = 0; n < N; n++) {
 		for (int m = 0; m < N; m++) {
