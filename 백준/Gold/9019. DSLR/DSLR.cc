@@ -1,15 +1,14 @@
 #include <iostream>
-#include <vector>
 #include <queue>
 using namespace std;
 
+bool v[10000];
 char f[] = { 'D','S','L','R' };
 short A, B, T, W[4];
 
 void V() {
-    vector <bool> v(10000, 1);
     queue <pair<short, string>> q;
-    q.push({ A,"" }); v[A] = 0;
+    q.push({ A,"" }); v[A] = 1;
     while (!q.empty()) {
         short n = q.front().first; string s = q.front().second; q.pop();
         if (n == B) { cout << s << '\n'; return; }
@@ -19,7 +18,7 @@ void V() {
         W[3] = ((n % 10) * 1000) + (n / 10);
         for (int m = 0; m < 4; m++) {
             int N = W[m];
-            if (v[N]) { v[N] = 0; q.push({ N,s + f[m] }); }
+            if (!v[N]) { v[N] = 1; q.push({ N,s + f[m] }); }
         }
     }
 }
@@ -27,6 +26,9 @@ void V() {
 int main() {
     ios::sync_with_stdio(false); cin.tie(NULL);
     cin >> T;
-    for (int n = 0; n < T; n++) { cin >> A >> B; V(); }
+    for (int n = 0; n < T; n++) {
+        cin >> A >> B; V();
+        fill_n(v, 10000, 0);
+    }
     return 0;
 }
