@@ -28,7 +28,6 @@ void V() {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
 	cin >> N;
 	for (int n = 0; n < N; n++) { cin >> v[n]; }
 	V();
