@@ -12,7 +12,7 @@ void s(int a, char b, char c, char d) {
 }
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);
+	ios::sync_with_stdio(false); cin.tie(NULL);
 	int a; cin >> a;
 	cout << (int)pow(2, a) - 1 << '\n';
 	s(a, '1', '3', '2');
