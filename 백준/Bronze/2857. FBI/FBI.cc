@@ -12,7 +12,9 @@ int main() {
 		}
 	}
 	if (w) {
-		for (int n = 0; n < 5; n++) { if (v[n]) { cout << n + 1 << ' '; } }
+		for (int n = 0; n < 5; n++) {
+			if (v[n]) { cout << n + 1 << ' '; }
+		}
 	}
 	else { cout << "HE GOT AWAY!"; }
 	return 0;
