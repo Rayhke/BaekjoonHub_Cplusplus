@@ -34,7 +34,7 @@ int main() {
 		v[y].push_back({ x,z });
 	}
 	W(1);
-	for (const auto& n : R) { M = n; V(n, 0); r[M] = 1; }		// 경우의 수 제거
+	for (const auto& n : R) { M = n; V(n, 0); r[M] = 1; }		// 중복 조합의 경우의 수 제거
 	cout << P;
 	return 0;
 }
