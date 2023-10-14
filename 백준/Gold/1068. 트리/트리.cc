@@ -26,3 +26,14 @@ int main() {
 	cout << P;
 	return 0;
 }
+/* ■ 설명 ■
+[체크 용도]
+25번째 줄
+for (int n = 0; n < N; n++) {
+	std::cout << n << " : ";
+	for (const auto& m : v[n]) {
+		std::cout << m << ' ';
+	}
+	std::cout << '\n';
+}
+*/
