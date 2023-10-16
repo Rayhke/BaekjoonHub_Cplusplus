@@ -27,3 +27,6 @@ int main() {
 	cout << s(N, K, w, v);
 	return 0;
 }
+/* ■ 설명 ■
+메모리: 42004 KB, 시간: 40 ms
+*/
