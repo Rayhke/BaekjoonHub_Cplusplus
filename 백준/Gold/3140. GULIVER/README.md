@@ -1,4 +1,4 @@
-# [Gold II] GULIVER - 3140 
+# [Gold I] GULIVER - 3140 
 
 [문제 링크](https://www.acmicpc.net/problem/3140) 
 
@@ -8,7 +8,7 @@
 
 ### 분류
 
-0-1 너비 우선 탐색, 데이크스트라, 그래프 이론, 최단 경로
+0-1 너비 우선 탐색, 데이크스트라, 그래프 이론, 그래프 탐색, 최단 경로
 
 ### 제출 일자
 
@@ -24,7 +24,7 @@
 
 <p>For example, if the left image below shows the island before the incident (the black parcels were already underwater), then to separate the island, only two more parcels need to be divided, as in the right image. </p>
 
-<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/ec7b6f3a-2baa-4dd7-8a65-2d89a239c6f1/-/preview/" style="width: 364px; height: 124px;"></p>
+<p style="text-align: center;"><img alt="" src="" style="width: 364px; height: 124px;"></p>
 
 <p>The historic problem that people have been talking about for generations is: what was the least number of parcels that had to be flooded to completely separate the two parts of the island? Your task is to write the program which computes that number. </p>
 
