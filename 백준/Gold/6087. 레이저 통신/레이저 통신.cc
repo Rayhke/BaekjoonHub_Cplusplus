@@ -3,7 +3,7 @@
 #include <queue>
 #define PairSS pair <short, short>
 #define PairIS pair <int, short>
-#define Vec vector<int>
+#define Vec vector <int>
 using namespace std;
 
 bool r[100][100], m[100][100][4];
