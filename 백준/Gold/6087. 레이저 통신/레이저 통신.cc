@@ -3,13 +3,14 @@
 #include <queue>
 #define PairSS pair <short, short>
 #define PairIS pair <int, short>
+#define Vec vector<int>
 using namespace std;
 
 bool r[100][100], m[100][100][4];
 short H, W, HE, WE;
 int U = 1e9;
 PairSS PM[] = { {0,1},{0,-1},{1,0},{-1,0} };
-vector <vector<vector<int>>> v(100, vector<vector<int>>(100, vector<int>(4, U)));
+vector <vector<Vec>> v(100, vector<Vec>(100, Vec(4, U)));
 queue <pair<PairIS, PairSS>> q;
 
 void V() {
