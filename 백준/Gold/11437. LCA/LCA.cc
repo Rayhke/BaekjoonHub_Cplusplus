@@ -26,14 +26,14 @@ int LCA(int N1, int N2) {
 int main() {
 	ios::sync_with_stdio(false);
 	US x, y; cin >> N;
-	for (US n = 0; n < N - 1; n++) {
+	for (int n = 0; n < N - 1; n++) {
 		cin >> x >> y;
 		v[x].push_back(y);
 		v[y].push_back(x);
 	}
 	D(1, 0);
 	cin >> M;
-	for (US m = 0; m < M; m++) {
+	for (int m = 0; m < M; m++) {
 		cin >> x >> y; cout << LCA(x, y) << '\n';
 	}
 	return 0;
