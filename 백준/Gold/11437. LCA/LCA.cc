@@ -46,3 +46,6 @@ int main() {
 	for (int m = 0; m < M; m++) { cin >> a >> b; LCA(); }
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
