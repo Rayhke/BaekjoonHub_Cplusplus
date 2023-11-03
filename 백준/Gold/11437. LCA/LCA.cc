@@ -24,7 +24,7 @@ int LCA(int N1, int N2) {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
+	ios::sync_with_stdio(false); cout.tie(NULL);
 	US x, y; cin >> N;
 	for (int n = 0; n < N - 1; n++) {
 		cin >> x >> y;
@@ -38,18 +38,3 @@ int main() {
 	}
 	return 0;
 }
-/* ■ 설명 ■
-깊이 우선 탐색(DFS)로 탐색 하면서, 깊이(가중치 비용)랑
-이전 발자취(부모 노드)를 남겨주면 된다.
-
-
-cout << "\n\n";
-	for (int n = 1; n <= N; n++) {
-		cout << "[노드 '" << n << "번' 정보] : " << w[n].first << " / " << w[n].second << '\n';
-		for (const auto& m : v[n]) {
-			cout << "다음 노드 : " << m << '\n';
-		}
-		cout << '\n';
-	}
-cout << "\n\n";
-*/
