@@ -1,11 +1,10 @@
 #include <iostream>
 #include <vector>
-#include <string>
 using namespace std;
 
 int P;
 string W, T;
-vector <int> v(10001);
+vector <int> v(10000);
 
 void KMP_Preprocess() {
 	int n = 0, m = -1;
