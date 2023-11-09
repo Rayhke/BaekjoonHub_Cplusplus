@@ -3,7 +3,6 @@
 #include <queue>
 using namespace std;
 
-
 bool R[32001];
 int N, M, w[32001];
 vector <int> v[32001];
