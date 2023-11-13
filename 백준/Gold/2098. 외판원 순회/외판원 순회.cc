@@ -12,7 +12,7 @@ int TSP(int M, int R) {
     DP[M][R] = U;
     for (int n = 0; n < N; n++) {
         if (V[M][n] == 0 || R & (1 << n)) { continue; }      // 1 : 노드 M 에서 노드 n 으로 갈 경로가 없는 경우 
-        int P = TSP(n, R | 1 << n);                          // 2 : 이미 방문한 노드인 경우
+        int P = TSP(n, R | 1 << n); // 깊이 탐색 진행        // 2 : 이미 방문한 노드인 경우
         DP[M][R] = min(DP[M][R], V[M][n] + P);
     }
     return DP[M][R];
