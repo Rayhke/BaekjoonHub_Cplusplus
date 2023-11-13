@@ -4,15 +4,15 @@ using namespace std;
 int N, E, U = 1e9, V[16][16], DP[16][1 << 16];
 
 int TSP(int M, int R) {
-    if (R == E) {                                        // 모든 노드에 방문에 성공 했을 시
+    if (R == E) {                                            // 모든 노드에 방문에 성공 했을 시
         if (V[M][0] > 0) { return V[M][0]; }
         return U;
     }
-    else if (DP[M][R] != 0) { return DP[M][R]; }
+    else if (DP[M][R] != 0) { return DP[M][R]; }             // 특정 노드 방문 수와 같으면서, 이미 최단 거리 값이 존재하면 P로 돌아가기
     DP[M][R] = U;
     for (int n = 0; n < N; n++) {
-        if (V[M][n] == 0 || R & (1 << n)) { continue; }
-        int P = TSP(n, R | 1 << n);
+        if (V[M][n] == 0 || R & (1 << n)) { continue; }      // 1 : 노드 M 에서 노드 n 으로 갈 경로가 없는 경우 
+        int P = TSP(n, R | 1 << n);                          // 2 : 이미 방문한 노드인 경우
         DP[M][R] = min(DP[M][R], V[M][n] + P);
     }
     return DP[M][R];
