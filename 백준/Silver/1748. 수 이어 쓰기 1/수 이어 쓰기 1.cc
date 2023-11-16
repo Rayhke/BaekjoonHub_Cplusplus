@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-	ios_base::sync_with_stdio(false);
 	int N, M = 1e8, L = 9, P = 0; cin >> N;
 	while (1) {
 		if (M <= N) { P += (N - M + 1) * L; break; }
