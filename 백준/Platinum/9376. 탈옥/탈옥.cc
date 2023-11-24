@@ -67,7 +67,7 @@ void Y() {
 
 int main() {
 	ios::sync_with_stdio(false); cin.tie(NULL);
-	bool K; int M; string S; cin >> T;
+	bool K; string S; cin >> T;
 	while (T--) {
 		cin >> H >> W; K = 1; P = U;
 		for (int h = 1; h <= H; h++) {
