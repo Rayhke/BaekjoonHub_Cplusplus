@@ -7,7 +7,7 @@ using namespace std;
 
 int N, M, P = 1, W[1001];	// W : 지나온 경로 저장
 PR w[1001];			// w.first : 진입차수	// w.second : 누적 비용
-vector <PR> v[1001];		// v.first : 가중치	// v.second : 돛차ㅊ노드
+vector <PR> v[1001];		// v.first : 가중치	// v.second : 목적지 노드
 queue <PR> q;
 stack <int> s;
 
