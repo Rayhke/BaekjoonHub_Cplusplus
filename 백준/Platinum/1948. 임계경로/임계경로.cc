@@ -35,7 +35,7 @@ void S() {
 }
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
+	ios::sync_with_stdio(false);
 	int x, y, z; cin >> N >> M;
 	while (M--) {
 		cin >> x >> y >> z; w[y]++;
