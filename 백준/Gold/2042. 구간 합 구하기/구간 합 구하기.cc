@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#define LL long long
 using namespace std;
 
-void init(vector<LL>& v, vector<LL>& tree, int node, int start, int end) {
+void init(vector<long long>& v, vector<long long>& tree, int node, int start, int end) {
 	if (start == end) { tree[node] = v[start]; }
 	else {
 		init(v, tree, node * 2, start, (start + end) / 2);
@@ -13,7 +12,7 @@ void init(vector<LL>& v, vector<LL>& tree, int node, int start, int end) {
 	}
 }
 
-void update(vector<LL>& v, vector<LL>& tree, int node, int start, int end, int index, LL value) {
+void update(vector<long long>& v, vector<long long>& tree, int node, int start, int end, int index, long long value) {
 	if (index < start || end < index) { return; }
 	if (start == end) {
 		v[index] = value;
@@ -25,21 +24,21 @@ void update(vector<LL>& v, vector<LL>& tree, int node, int start, int end, int i
 	tree[node] = tree[node * 2] + tree[node * 2 + 1];
 }
 
-LL query(vector<LL>& tree, int node, int start, int end, int left, int right) {
+long long query(vector<long long>& tree, int node, int start, int end, int left, int right) {
 	if (right < start || end < left) { return 0; }
 	if (left <= start && end <= right) { return tree[node]; }
-	LL Lsum = query(tree, node * 2, start, (start + end) / 2, left, right);
-	LL Rsum = query(tree, node * 2 + 1, (start + end) / 2 + 1, end, left, right);
+	long long Lsum = query(tree, node * 2, start, (start + end) / 2, left, right);
+	long long Rsum = query(tree, node * 2 + 1, (start + end) / 2 + 1, end, left, right);
 	return Lsum + Rsum;
 }
 
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
-	int N, M, K, H, tree_size, T, L_index; LL R_value; cin >> N >> M >> K;
+	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	int N, M, K, H, tree_size, T, L_index; long long R_value; cin >> N >> M >> K;
 	H = (int)ceil(log2(N));
 	tree_size = (1 << (H + 1)); M += K;
-	vector <LL> v(N);
-	vector <LL> tree(tree_size);
+	vector <long long> v(N);
+	vector <long long> tree(tree_size);
 	for (int n = 0; n < N; n++) { cin >> v[n]; }
 	init(v, tree, 1, 0, N - 1);
 	while (M--) {
