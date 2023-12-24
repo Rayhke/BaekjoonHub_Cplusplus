@@ -4,7 +4,7 @@
 using namespace std;
 
 void init(vector<int>& v, vector<int>& tree, int node, int start, int end) {		// 핵심 부분 (어떻게 구조를 만드냐에 따라 다양한 문제에 대응함)
-	if (start == end) { tree[node] = v[start]; }				// 끝에 도달하면 그것에 맞는 v 원소 대입
+	if (start == end) { tree[node] = v[start]; }				// 끝에 도달하면 그것에 맞는 v배열의 원소 대입
 	else {									// 오른쪽, 왼쪽으로 가장 아래 끝까지 깊게 내려가기
 		init(v, tree, node * 2, start, (start + end) / 2);
 		init(v, tree, node * 2 + 1, (start + end) / 2 + 1, end);
