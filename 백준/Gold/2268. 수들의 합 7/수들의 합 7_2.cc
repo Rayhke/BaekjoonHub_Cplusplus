@@ -41,3 +41,8 @@ int main() {
 	}
 	return 0;
 }
+/* ■ 설명 ■
+[오답 원인]
+' T ' 가 ' 0 ' 일 때, index 값이 주어지는 것이 무조건 (L_index < R_value) 으로 주어지지 않으며
+만약 R_value 가 더 크다면, R_value ~ L_index 으로 하면 된다.
+*/
