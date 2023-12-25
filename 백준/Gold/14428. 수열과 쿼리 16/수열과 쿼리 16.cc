@@ -18,7 +18,7 @@ PAIR update(int node, int start, int end, int index, int value) {
 	if (index < start || end < index) { return tree[node]; }
 	if (start == end) {
 		v[index] = value;
-		return tree[node] = { value,index };
+		return tree[node] = { value,index };			// [오답 원인] first 와 second 값 위치 변경 미적용
 	}
 	int mid = (start + end) / 2;
 	return tree[node] = min(update(node * 2, start, mid, index, value), update(node * 2 + 1, mid + 1, end, index, value));
