@@ -3,7 +3,7 @@
 #define PAIR pair<int, int>
 using namespace std;
 
-int v[100000], U = 1e9 + 1;
+int v[100000], U = 1e9 + 1;						// [오답 원인] value 값 max이 1e9 와 동일하여, 아래의 vector 배열 탐색 관련 문제 발생
 vector <PAIR> tree(262144, { U,U });
 
 PAIR init(int node, int start, int end) {
