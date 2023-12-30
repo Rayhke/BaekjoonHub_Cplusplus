@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 #define LL long long
-#define PAIR pair<LL, LL>
+#define PAIR pair<LL, LL>	// first : y축, second : x축
 using namespace std;
 
 vector <PAIR> v, w;
