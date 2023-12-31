@@ -36,9 +36,9 @@ int main() {
 	sort(v.begin(), v.end());
 	sort(v.begin() + 1, v.end(), P);
 	for (auto& n : v) {
-		while (w.size() > 1) {
-			if (CCW(w[w.size() - 2], w.back(), n) >= 0) { break; }
-			s.push(w.back());
+		while (w.size() > 1) {						// 왜 이런 식으로 조건이 이루어 지느냐?
+			if (CCW(w[w.size() - 2], w.back(), n) >= 0) { break; }	// 반시계 방향과 직선의 경우는 이미 성립하므로 통과
+			s.push(w.back());					// 반대로 볼록 껍질에 속하지만 특정 경우에 의해 
             w.pop_back();
 		}
 		w.push_back(n);
@@ -52,3 +52,7 @@ int main() {
 	}
 	return 0;
 }
+/* ■ 설명 ■
+볼록 껍질을 그레이엄 스캔(Graham Scan)으로 방문하는 형식인 동시에
+볼록 껍질을 이루는 모든 점을 출력하도록 해야 한다.
+*/
