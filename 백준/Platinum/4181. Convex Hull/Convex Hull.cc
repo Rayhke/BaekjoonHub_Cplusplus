@@ -39,7 +39,7 @@ int main() {
 		while (w.size() > 1) {						// 왜 이런 식으로 조건이 이루어 지느냐?
 			if (CCW(w[w.size() - 2], w.back(), n) >= 0) { break; }	// 반시계 방향과 직선의 경우는 이미 성립하므로 통과
 			s.push(w.back());					// 반대로 볼록 껍질에 속하지만 특정 경우에 의해 
-            w.pop_back();
+			w.pop_back();						// 시계 방향으로 나오는 조합이 나온 경우 따로 보관하는 것
 		}
 		w.push_back(n);
 	}
