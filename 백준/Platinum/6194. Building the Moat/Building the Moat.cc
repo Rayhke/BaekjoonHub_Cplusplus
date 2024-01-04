@@ -6,7 +6,7 @@
 #define PAIR pair<LL, LL>
 using namespace std;
 
-long double Perimeter = 0, R, X, Y, PI = 6.283185307180;
+double Perimeter = 0, X, Y;
 vector <PAIR> v, w;
 
 void Pythagoras(PAIR& P1, PAIR& P2) {
@@ -62,13 +62,3 @@ int main() {
 	cout << Perimeter;
 	return 0;
 }
-/* ■ 설명 ■
-[오답 원인]
-'예제 입력 1'을 기준으로 총 8개의 점이 이뤄지는 데
-
-for (int n = 0; n < w.size(); n++) {
-	w[n], w[n + 1];
-}
-위의 형식으로 방문한 것 까진 좋은 데, 마지막에 w[0], w[w.size() - 1]
-첫 번째 점과 가장 마지막 점 사이의 선의 길이를 더하지 않은 탓에 오답이 난 것이다.
-*/
