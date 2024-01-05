@@ -62,3 +62,6 @@ int main() {
 	cout << Perimeter;
 	return 0;
 }
+/* ■ 설명 ■
+다각형의 외각의 합이 360°인 것을 응용한 문제
+*/
