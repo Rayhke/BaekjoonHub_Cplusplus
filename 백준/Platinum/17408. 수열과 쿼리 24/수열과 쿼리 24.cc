@@ -67,3 +67,15 @@ int main() {
 	}
 	return 0;
 }
+/* ■ 설명 ■
+1번 째로 큰 값과 2번 째로 큰 값을 구하면 된다.
+2번 째로 큰 값을 구하는 조건이 잘 생각나지 않았다..
+
+[PAIR query]
+query(node * 2, start, mid, left, right);
+query(node * 2 + 1, mid + 1, end, left, right);
+return first_second_max(tree[node * 2], tree[node * 2 + 1]);
+
+위와 같이 동작할 시, 범위 바깥의 max 값이 포함되어 버리는 데
+원인이 무엇인지 분석할 것.
+*/
