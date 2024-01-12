@@ -2,11 +2,10 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#define LL long long
-#define PAIR pair<LL, LL>
+#define PAIR pair<int, int>
 using namespace std;
 
-long double Perimeter = 0, R, X, Y, PI = 6.283185307180;
+double Perimeter = 0, R, X, Y, PI = 6.283185307180;
 vector <PAIR> v, w;
 
 void Pythagoras(PAIR& P1, PAIR& P2) {
@@ -18,7 +17,7 @@ void Pythagoras(PAIR& P1, PAIR& P2) {
 }
 
 int CCW(PAIR& P1, PAIR& P2, PAIR& P3) {
-	LL M = P1.first * P2.second + P2.first * P3.second + P3.first * P1.second;
+	int M = P1.first * P2.second + P2.first * P3.second + P3.first * P1.second;
 	M -= P1.first * P3.second + P2.first * P1.second + P3.first * P2.second;
 	if (M > 0) { return 1; }
 	else if (M < 0) { return -1; }
@@ -35,7 +34,7 @@ bool P(PAIR& P2, PAIR& P3) {
 }
 
 int main() {
-	int N; LL x, y; cin >> N >> R;
+	int N, x, y; cin >> N >> R;
 	for (int n = 0; n < N; n++) {
 		cin >> x >> y;
 		v.push_back({ x,y });
