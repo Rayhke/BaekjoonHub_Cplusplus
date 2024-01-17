@@ -53,10 +53,10 @@ int main() {
 			w.push_back(v[n]); r.push_back(n);
 		}
 		if (w.size() > 2) {
-			for (const auto& n : w) { V[n.second.first] = M; }
-			for (const auto& n : r) { v[n].second.second = 1; }
+			for (const auto& n : w) { V[n.second.first] = M; }		// 층을 표시하는 역할
+			for (const auto& n : r) { v[n].second.second = 1; }		// 사용한 원소 표시
 			v.erase(remove_if(v.begin(), v.end(), [](const auto& n) {
-				return n.second.second;
+				return n.second.second;					// 사용한 원소를 제거
 			}), v.end());
 		}
 		else { break; }
