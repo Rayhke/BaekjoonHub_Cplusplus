@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <cmath>
 #define IB pair<int, bool>
 #define II pair<int, int>
 #define PAIR pair<II, IB>
@@ -42,7 +41,6 @@ int main() {
 	while (!v.empty()) {
 		sort(v.begin(), v.end());
 		sort(v.begin() + 1, v.end(), P);
-		// for (auto& n : v) {
 		for (int n = 0; n < v.size(); n++) {
 			while (w.size() > 1 && r.size() > 1) {
 				PAIR P2 = w.back(); w.pop_back();
@@ -55,10 +53,10 @@ int main() {
 			w.push_back(v[n]); r.push_back(n);
 		}
 		if (w.size() > 2) {
-			for (const auto& n : w) { V[n.second.first] = M; }		// 층을 표시하는 역할
-			for (const auto& n : r) { v[n].second.second = 1; }		// 사용한 원소 표시
+			for (const auto& n : w) { V[n.second.first] = M; }
+			for (const auto& n : r) { v[n].second.second = 1; }
 			v.erase(remove_if(v.begin(), v.end(), [](const auto& n) {
-				return n.second.second;					// 사용한 원소를 제거
+				return n.second.second;
 			}), v.end());
 		}
 		else { break; }
