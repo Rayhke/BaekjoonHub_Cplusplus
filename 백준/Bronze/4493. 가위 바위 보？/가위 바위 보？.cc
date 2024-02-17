@@ -5,7 +5,7 @@ char C1, C2; int T, N, Player[2], Point[4][4];
 string S;
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    ios::sync_with_stdio(false); cin.tie(NULL);
 	Point[3][2] = 1; Point[2][0] = 1; Point[0][3] = 1;
 	cin >> T;
 	while (T--) {
