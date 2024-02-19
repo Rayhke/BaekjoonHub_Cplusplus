@@ -8,3 +8,6 @@ This is a auto push repository for Baekjoon Online Judge created with [BaekjoonH
 백준 - '문제 난이도' ('문제 번호', '문제 이름') 문제를 참고할 것
 
 // 이렇게 설계한 이유는 - ◆ 해설 1 ◆ 참고
+
+# My Tier
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=nink2458)](https://solved.ac/nink2458/)
