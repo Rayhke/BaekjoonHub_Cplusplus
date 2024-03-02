@@ -9,3 +9,6 @@ int main(int argc, char* argv[]) {
 	}
 	return 0;
 }
+/* ■ 설명 ■
+단순히 main 이 시작 후, 입력을 받는 것 보단, 매개변수로 받아오는 것이 더욱 빠르다.
+*/
