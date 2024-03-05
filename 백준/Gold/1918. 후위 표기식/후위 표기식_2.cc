@@ -26,3 +26,6 @@ int main() {
 	while (!s.empty()) { cout << s.top(); s.pop(); }
 	return 0;
 }
+/* ■ 설명 ■
+재미로만 봐주시길 바라며, 좋지 못한 설계입니다.
+*/
