@@ -19,7 +19,7 @@ int main() {
 	return 0;
 }
 /* ■ 설명 ■
-문제 해결법은 나쁘지 않았으나, 시간 초과로 실패
+문제 대응 솔루션은 나쁘지 않았으나, 시간 초과로 실패
 
 [참조]
 https://velog.io/@huthut_kwon/%EB%B0%B1%EC%A4%80-26008%EB%B2%88-%ED%95%B4%EC%8B%9C-%ED%95%B4%ED%82%B9-v6di6eyz
