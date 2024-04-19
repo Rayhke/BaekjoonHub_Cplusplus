@@ -14,3 +14,6 @@ int main() {
 	for (auto& n : mp) { n.second = L; L++; }
 	for (int n = 0; n < N; n++) { cout << mp[v[n]] << ' '; }
 }
+/* ■ 설명 ■
+자료구조 Map의 특성을 활용하여, 풀은 형식
+*/
