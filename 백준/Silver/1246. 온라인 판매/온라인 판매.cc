@@ -15,3 +15,6 @@ int main() {
 	cout << Min << ' ' << Max;
 	return 0;
 }
+/* ■ 설명 ■
+1. 
+*/
