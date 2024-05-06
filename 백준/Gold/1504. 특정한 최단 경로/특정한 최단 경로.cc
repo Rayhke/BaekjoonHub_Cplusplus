@@ -20,13 +20,11 @@ void BFS() {
 		auto [vk1, vk2, vk3] = Q.front().first;
 		auto [node, cost] = Q.front().second; Q.pop();
 		for (PAIR Next : Graph[node]) {
-			short Now = Next.first;
-			int Cost = Next.second + cost;
-			bool VK4 = (Now == N), VK3 = (vk3 || VK4), VK2 = (vk2 || Now == V2), VK1 = (vk1 || Now == V1);
-			if (Weight[Now][VK1][VK2][VK3] > Cost) {
-				Weight[Now][VK1][VK2][VK3] = Cost;
+			bool VK4 = (Next.first == N), VK3 = (vk3 || VK4), VK2 = (vk2 || Next.first == V2), VK1 = (vk1 || Next.first == V1);
+			if (Weight[Next.first][VK1][VK2][VK3] > Next.second + cost) {
+				Weight[Next.first][VK1][VK2][VK3] = Next.second + cost;
 				if (VK1 && VK2 && VK3 && VK4) { continue; }
-				Q.push({ {VK1,VK2,VK3},{Now,Cost} });
+				Q.push({ {VK1,VK2,VK3},{Next.first,Next.second + cost} });
 			}
 		}
 	}
