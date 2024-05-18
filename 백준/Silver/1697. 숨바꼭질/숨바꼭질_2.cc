@@ -20,3 +20,7 @@ int main() {
 	int N, K; cin >> N >> K; B(N, K);
 	return 0;
 }
+/* ■ 설명 ■
+메모리	: 2508 KB
+시간	: 0 ms
+*/
