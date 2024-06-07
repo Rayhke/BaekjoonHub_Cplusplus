@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    cin.tie(NULL);
+	cin.tie(NULL);
 	int T, N, C, day; cin >> T;
 	while (T--) {
 		cin >> N >> C;
