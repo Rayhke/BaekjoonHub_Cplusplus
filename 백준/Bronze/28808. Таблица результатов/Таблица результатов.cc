@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-	int N, M, Count = 0; string S; cin >> N >> M;
+	char S[101]; int N, M, Count = 0; cin >> N >> M;
 	while (N--) {
 		cin >> S;
-		for (char C : S) {
-			if (C == '+') { Count++; break; }
+		for (int m = 0; m < M; m++) {
+			if (S[m] == 43) { Count++; break; }
 		}
 	}
 	cout << Count;
