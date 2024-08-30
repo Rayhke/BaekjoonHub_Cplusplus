@@ -1,26 +1,23 @@
 #include <iostream>
-#define PAIR pair<int, int>
-using namespace std;
 
-PAIR P;
+int Min = 0, Max = 0;
 
-PAIR Run(string& S) {
-	int Min = 0, Max = 0, Value;
+void Run(std::string& S) {
+	int M1 = 0, M2 = 0, V;
 	for (char& C : S) {
-		Min *= 10; Max *= 10;
+		M1 *= 10; M2 *= 10;
 		if (C == 53 || C == 54) {
-			Min += 5; Max += 6; continue;
+			M1 += 5; M2 += 6; continue;
 		}
-		Value = C - 48;
-		Min += Value; Max += Value;
+		V = C - 48;
+		M1 += V; M2 += V;
 	}
-	return {Min, Max};
+	Min += M1; Max += M2;
 }
 
 int main() {
-	int Min = 0, Max = 0; string A, B; cin >> A >> B;
-	P = Run(A); Min += P.first; Max += P.second;
-	P = Run(B); Min += P.first; Max += P.second;
+	std::string A, B; std::cin >> A >> B;
+	Run(A); Run(B);
 	printf("%d %d", Min, Max);
 	return 0;
 }
