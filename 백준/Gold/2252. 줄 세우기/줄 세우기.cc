@@ -18,7 +18,7 @@ void V() {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
+	ios::sync_with_stdio(false); cout.tie(NULL);
 	int x, y; cin >> N >> M;
 	while (M--) {
 		cin >> x >> y; w[y]++; v[x].push_back(y);
