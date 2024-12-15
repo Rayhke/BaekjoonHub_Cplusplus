@@ -2,16 +2,13 @@
 #include <vector>
 using namespace std;
 
-int N, Size; string Result = "";
-
 int main() {
-	cin >> N;
+	int N, Size = 0; string Result = ""; cin >> N;
 	vector<string> Vec(N);
 	for (auto& vec : Vec) { cin >> vec; }
-	Result += Vec[0][0]; Size = Vec[0].length();
-	for (int n = 1; n < N; n++) {
-		Result += (Size > Vec[n].length()) ? ' ' : Vec[n][Size - 1];
-		Size = Vec[n].length();
+	for (auto& vec : Vec) {
+		Result += Size > vec.length() ? ' ' : vec[max(--Size, 0)];
+		Size = vec.length();
 	}
 	cout << Result;
 	return 0;
