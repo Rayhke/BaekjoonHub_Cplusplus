@@ -2,12 +2,15 @@
 using namespace std;
 
 int main() {
-    int N, M, L, Arr[100000]; cin >> N >> M; L = N + 1;
-    for (int n = N - 1; n > -1; n--) { cin >> Arr[n]; }
+    ios::sync_with_stdio(false); cin.tie(NULL);
+    int N, M, Arr[100000], Sum = 0; cin >> N >> M;
     for (int n = 0; n < N; n++) {
-        if (M < 1) { L = N - n + 1; break; }
-        M -= Arr[n];
+        cin >> Arr[n]; Sum += Arr[n];
     }
-    cout << N - L;
+    if (Sum < M) { cout << -1; return 0; }
+    for (int n = 0; n < N; n++) {
+        if (Sum - Arr[n] < M) { cout << n + 1; break; }
+        Sum -= Arr[n];
+    }
     return 0;
 }
