@@ -1,8 +1,9 @@
 #include <iostream>
 
 int main() {
-	int N = 1; std::string S; std::cin >> S;
+	int N = 1; char S[51]; std::cin >> S;
 	for (char& C : S) {
+		if (C == 0) { break; }
 		if (--N) { continue; }
 		std::cout << C; N = C - 64;
 	}
