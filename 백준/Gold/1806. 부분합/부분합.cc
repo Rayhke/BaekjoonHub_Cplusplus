@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int Arr[100000];
-
 int main() {
 	ios_base::sync_with_stdio(false);
-	int N, S, L = 0, Min = 1e9, Sum = 0; cin >> N >> S;
+	int N, S, L = 0, Min = 1e9, Sum = 0, Arr[100000]; cin >> N >> S;
 	for (int n = 0; n < N; n++) {
 		cin >> Arr[n];
 	}
