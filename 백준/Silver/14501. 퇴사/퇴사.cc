@@ -22,5 +22,4 @@ int main() {
 	}
 	cout << max(DP[N - 1], DP[N]);
 	return 0;
-
 }
