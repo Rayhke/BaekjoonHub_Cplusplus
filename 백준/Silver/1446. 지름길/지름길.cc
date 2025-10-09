@@ -21,7 +21,7 @@ int main() {
 		return C1 < C2;
 		});
 	for (int n = 0; n <= D; n++) { DP[n] = Min++; }
-	for (const auto in : In) {
+	for (const auto &in : In) {
 		S = in.first.first;
 		E = in.first.second;
 		if (S > D || E > D) { continue; }
